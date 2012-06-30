@@ -1,0 +1,79 @@
+{% extends 'website/base.html' %}
+{% block title %}Inicio{% endblock%}
+
+{% block head_css %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/flexslider/flexslider.css">
+{% endblock %}
+
+{% block section_contenido %}
+ 
+ <section id="contenido-home" class="conten1">
+ 	
+	<div id="contenslider">
+
+		<div class="flexslider">
+
+			<ul class="slides">
+				<li>
+					<a href="#"><img src="{{STATIC_URL}}img/B3.jpg" title="Se Intensifican las Misiones"></a>
+					<p class="flex-caption">CONGRESO NACIONAL DE MISIONES</p>
+				  
+					<div class="cajatexto">
+						<h3>CONGRESO NACIONAL DE MISIONES</h3>	
+						<p>
+							“Comprometido con la tarea misional de la IACYMC dentro y fuera del país, orientando la plantación de nuevas iglesias tanto internas en Colombia, como externas en el exterior, ayudando a la iglesia en el desarrollo de un ministerio sano y sanador”
+						</p>
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="{{STATIC_URL}}img/B2.jpg" title="Se Intensifican las Misiones">
+				    	<p class="flex-caption">Se Incrementan las Misiones</p>
+				    </a>
+					<div class="cajatexto">
+						<h3>Se Incrementan las Misiones</h3>	
+						<p>
+							Comprometido con la tarea misional de la IACYMC dentro y fuera del país,
+						</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+	</div>
+
+ </section>
+
+ <section id="tips-home" class="conten2">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	
+ </section>
+
+{% endblock %}
+
+
+{% block bootom_script %}
+<script src="{{STATIC_URL}}js/lib/flexslider.js"></script>
+<script type="text/javascript">
+	$(window).load( encenderFlexSlider );
+	 
+	function encenderFlexSlider()
+	{
+	   $('.flexslider').flexslider({ 
+			directionNav: false,
+			pauseOnHover: true,
+			slideshow: true
+		});
+	}
+</script>
+
+{% endblock %}
+
+
+

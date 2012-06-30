@@ -1,0 +1,40 @@
+nav 
+	position relative
+	> ul
+		text-align right
+		padding 0
+		> li
+			display inline-block
+			margin 5px 0 0 -19px
+			height 30px
+			&:before
+				content url(../img/menu-before.png)
+				display inline-block
+				height 30px
+				vertical-align top
+			a
+				color #ffffff !important
+				font-family  'Times New Roman', Times, serif
+				font-size 0.875em
+				background #2C2214
+				vertical-align top
+				display inline-block
+				height 26px
+				padding 4px 0 0 5px
+			&:after
+				content url(../img/menu-after.png)
+				display inline-block
+				height 30px
+				vertical-align top
+			&:first-child
+				vertical-align top
+				margin-left 0
+				&:before
+					content none
+				a
+					padding-left 17px
+			&:last-child
+				&:after
+					content none
+				a
+					padding-right 17px

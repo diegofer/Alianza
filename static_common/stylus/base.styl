@@ -1,0 +1,250 @@
+@font-face
+	font-family 'miller'
+	font-weight normal
+	font-style normal
+	src: url('../fonts/miller-textroman-webfont.eot')
+	src: url('../fonts/miller-textroman-webfont.eot?#iefixt') format('embedded-opentype'),
+		 url('../fonts/miller-textroman-webfont.woff') format('woff'),
+		 url('../fonts/miller-textroman-webfont.ttf') format('truetype'),
+		 url('../fonts/miller-textroman-webfont.svg#MillerTextRoman') format('svg')
+
+@font-face
+	font-family 'MacBook'
+	font-weight normal
+	font-style normal
+	src: url('../fonts/mcboohmk-webfont.eot')
+	src: url('../fonts/mcboohmk-webfont.eot?#iefixt') format('embedded-opentype'),
+		 url('../fonts/mcboohmk-webfont.woff') format('woff'), 
+		 url('../fonts/mcboohmk-webfont.ttf') format('truetype'), 
+		 url('../fonts/mcboohmk-webfont.svg#McBooHmkRegular') format('svg')
+
+
+///////////////////// IMPORTS /////////////////////
+@import "help"
+@import "reset"
+ 
+///////////////////// EXTRUCTURA  /////////////////////
+body
+	background url(../img/fondo-main.jpg) #2e2312
+	//text-align center
+#wrapper
+	position relative
+	margin 40px auto 70px auto
+	max-width 1024px
+	min-width 320px
+	width 80%
+	//background rgba(100, 200, 200, 0.1)
+	
+	.conten1
+		borderRadius 0 0 10px 10px
+	.conten2
+		borderRadius 10px
+
+	.conten1
+	.conten2
+		background #E7E6E5
+		margin-bottom 20px
+		position relative
+
+///////////////////// CONTACTO BUSCAR /////////////////////
+#search
+	color white
+	text-align right
+	font-size 0.8em
+	margin-bottom 5px
+	a
+		color white
+	a:hover
+		color #44C2FB
+		//color #F27490
+	span
+		margin 0 5px
+		font-size 1.5em
+	input[type="search"]
+		borderRadius 7px
+
+
+///////////////////// HEADER /////////////////////
+header
+	position relative
+	background url(../img/fondo-header.jpg)
+	border-bottom 1px solid #999
+	borderRadius 10px 10px 0 0 
+	width 100%
+
+#logo
+	position relative
+	display inline-block
+	margin 10px 1% 0 1%
+	max-width 451px
+	width 98%
+	img
+		max-width 100%
+		height auto
+		width auto\\9
+
+///////////////////// NAVEGACION /////////////////////
+nav
+	ul
+		padding 0
+	ul#menu
+		text-align right
+		>li
+			display inline-block
+			vertical-align top
+			height 30px
+			margin-left -19px
+			>a
+			>span
+				display inline-block
+				height 30px
+				vertical-align top
+			>a
+				padding 4px 0 0 5px 
+				height 26px
+				color white !important
+				background #2C2214
+				font-family  'Times New Roman', Times, serif
+				font-size 0.875em
+			>span:nth-child(3)
+				width 17px
+				background url(../img/menu-after.png)
+			>span:nth-child(1)
+				width 17px
+				background url(../img/menu-before.png)
+			>span:nth-child(2)
+				width 17px
+				background url(../img/menu-after.png)
+			&:first-child
+				margin-left 0
+				>a
+					padding-left 17px
+			&:last-child
+				>a
+					padding-right 17px
+			&:hover ul#sub-menu
+				display block !important		
+	ul#sub-menu
+		position absolute
+		width 140px
+		display none
+		text-align left
+		background #2C2214
+		margin-left 17px
+		borderRadius 0 0 5px 5px
+		filter unquote('alpha(opacity=90)')
+		opacity .90
+		padding 10px
+		li
+			position relative
+			margin-top 5px
+			border-bottom 1px solid #555555
+			&:hover
+				background darkred
+			a
+				display block
+				color white
+				font-size 0.75em
+
+///////////////////// CONTENIDO HOME ////////////////////
+#contenslider
+	padding 10px
+
+.flexslider
+	position relative
+	gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% ) 
+	max-width 850px
+	width auto\\9
+	margin 30px auto 50px auto !important
+	//background-image url(../img/assets/loading.gif) no-repeat 50% 50%
+	background black !important
+	img
+		flotarIz()	
+	.cajatexto
+		max-height 209px //Esta es la altura de la foto
+		overflow hidden
+		h3
+			text-align left
+			margin 5px 5px 10px 10px
+			font-size 1.5em 
+			font-family 'miller',Arial,Sans-serif
+		p
+			margin 0 5px 0 10px
+			font-family 'Times New Roman', Times, serif
+			font-size 1em
+	.flex-caption
+		display none  
+
+///////////////////// FOOTER /////////////////////	
+footer
+	position relative
+	margin-top 25px
+	text-align center
+	a
+		color black
+	#top-footer
+		position absolute
+		width 100%
+		height 30px
+		borderRadius 10px 10px 0 0
+		gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% ) 
+	ul
+		padding 0
+		list-style none
+		font-size 12px
+	>ul	
+		>li:first-child
+			min-width 80px
+			width 80px	
+		>li
+			text-align center
+			min-width 120px
+			width 17%
+			vertical-align top
+			display inline-block
+			div
+				position relative
+				height 30px
+				gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% )
+				borderRadius 10px
+				a
+					display block
+					padding-top 7px
+				a:hover
+					color #44C2FB
+				span
+					display block
+					width 20px
+					height 30px
+					position absolute
+					right 0
+					top 0
+					background url('../img/sprite-icons.png') no-repeat
+					background-position -113px -1px
+	.submenu-footer
+		li
+			margin-bottom 5px
+			&:hover
+				background #44C2FB
+	p 
+		text-align center
+		font-size 11px
+		padding-bottom 10px
+		font-family 'miller',Arial,Sans-serif
+
+
+///////////////////// MEDIA QUERYS /////////////////////
+
+@media screen and (min-width:801px) and (max-width:1000px)
+	#wrapper
+		width 90%
+
+@media screen and (max-width:800px)
+	#wrapper
+		width 95%
+	nav
+		border-top 1px solid #999
+		ul#menu
+			text-align center
+			>li
+				margin-top 3px
