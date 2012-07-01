@@ -160,4 +160,5 @@ pip-log.txt
 .mr.developer.cfg
 
 # Mac crap
-.DS_Store
+.DS_Storet.py
+settings.py
