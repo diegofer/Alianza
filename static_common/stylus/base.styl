@@ -26,6 +26,7 @@
 ///////////////////// EXTRUCTURA  /////////////////////
 body
 	background url(../img/fondo-main.jpg) #2e2312
+	font-family verdana, arial, sans-serif
 	//text-align center
 #wrapper
 	position relative
@@ -39,10 +40,9 @@ body
 		borderRadius 0 0 10px 10px
 	.conten2
 		borderRadius 10px
-
 	.conten1
 	.conten2
-		background #E7E6E5
+		background-color #E7E6E5
 		margin-bottom 20px
 		position relative
 
@@ -63,12 +63,37 @@ body
 	input[type="search"]
 		borderRadius 7px
 
+aside
+	position absolute
+	height 40px
+	right 10px
+	bottom 10px
+	ul#redes
+		padding 0 !important
+		margin 0 !important
+		list-style none
+		li
+			display inline-block
+			width 37px
+			height 40px
+			a
+				display block
+				width 37px
+				height 40px
+				background-image url(../img/sprite-icons.png)
+		li:nth-child(2)
+			a
+				background-position -37px 0
+		li:nth-child(3)
+			a
+				background-position -74px 0
+
 
 ///////////////////// HEADER /////////////////////
 header
 	position relative
 	background #E7E6E5 url(../img/fondo-header.jpg)
-	border-bottom 1px solid #999
+	//border-bottom 1px solid #999
 	borderRadius 10px 10px 0 0 
 	width 100%
 
@@ -95,7 +120,7 @@ nav
 			display inline-block
 			vertical-align top
 			position relative
-			width 18.05%
+			width 17.95%
 			min-width 130px//140px
 			height 30px
 			margin 5px 0 0 -18px
@@ -112,7 +137,7 @@ nav
 				right 20px
 				color white !important
 				background #2C2214
-				font-family  verdana, arial !important !important
+				font-family verdana, arial, sans-serif
 				font-size 12px	
 			>span
 				width 20px
@@ -157,17 +182,18 @@ nav
 				font-size 0.75em
 
 ///////////////////// CONTENIDO HOME ////////////////////
-#contenslider
+
+#contenido-home
 	padding 10px
+	min-height 200px
+	margin-bottom 25px !important
 
 .flexslider
 	position relative
-	gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% ) 
+	gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% )
 	max-width 850px
 	width auto\\9
-	margin 30px auto 50px auto !important
-	//background-image url(../img/assets/loading.gif) no-repeat 50% 50%
-	background black !important
+	margin 20px auto 50px auto !important
 	img
 		flotarIz()	
 	.cajatexto
@@ -184,6 +210,30 @@ nav
 			font-size 1em
 	.flex-caption
 		display none  
+
+#tips-home
+	background-image url(../img/fondo-tips.jpg) 
+	text-align center
+	div
+		display inline-block
+		width 32.5%
+		vertical-align top
+		borderRadius 20px
+		h3
+			display inline-block
+			width 193px
+			height 67px
+			font-weight normal
+			background url(../img/cabezote.png)
+			color white
+			margin -12px 0 0 0
+		p
+			width 90% 
+			margin 20px auto 20px auto
+			color black
+			text-align justify
+
+
 
 ///////////////////// FOOTER /////////////////////	
 footer
@@ -248,9 +298,37 @@ footer
 @media screen and (min-width:801px) and (max-width:1000px)
 	#wrapper
 		width 90%
+	.flexslider
+		.cajatexto
+			h3
+				font-size 1em
 
 @media screen and (max-width:800px)
 	#wrapper
 		width 95%
 	nav
 		border-top 1px solid #999
+
+	.flexslider
+		max-width 550px
+		margin auto
+		img 
+			width 100%
+		.cajatexto
+			display none
+			visibility: hidden				
+		.flex-caption
+			display inline
+
+@media screen and (max-width:650px)
+	#tips-home
+		background none !important
+		div
+			width 100%
+			background-image url(../img/fondo-tips.jpg) 
+			background-position 0 -50px
+			margin-bottom 25px 
+			p
+				width 70%
+	
+
