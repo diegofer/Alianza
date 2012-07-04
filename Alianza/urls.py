@@ -7,9 +7,10 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'website.views.home'),
+    url(r'^update/?$', 'github.views.update'),
 
-    url(r'^estadistica/$', 'estadistica.views.shell'),
-    url(r'^estadistica/region/$', 'estadistica.views.region_vista'),
+    #url(r'^estadistica/$', 'estadistica.views.shell'),
+    #url(r'^estadistica/region/$', 'estadistica.views.region_vista'),
     # url(r'^Alianza/', include('Alianza.foo.urls')),
 
  
