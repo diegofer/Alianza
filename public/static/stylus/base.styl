@@ -1,0 +1,334 @@
+@font-face
+	font-family 'miller'
+	font-weight normal
+	font-style normal
+	src: url('../fonts/miller-textroman-webfont.eot')
+	src: url('../fonts/miller-textroman-webfont.eot?#iefixt') format('embedded-opentype'),
+		 url('../fonts/miller-textroman-webfont.woff') format('woff'),
+		 url('../fonts/miller-textroman-webfont.ttf') format('truetype'),
+		 url('../fonts/miller-textroman-webfont.svg#MillerTextRoman') format('svg')
+
+@font-face
+	font-family 'MacBook'
+	font-weight normal
+	font-style normal
+	src: url('../fonts/mcboohmk-webfont.eot')
+	src: url('../fonts/mcboohmk-webfont.eot?#iefixt') format('embedded-opentype'),
+		 url('../fonts/mcboohmk-webfont.woff') format('woff'), 
+		 url('../fonts/mcboohmk-webfont.ttf') format('truetype'), 
+		 url('../fonts/mcboohmk-webfont.svg#McBooHmkRegular') format('svg')
+
+
+///////////////////// IMPORTS /////////////////////
+@import "help"
+@import "reset"
+ 
+///////////////////// EXTRUCTURA  /////////////////////
+body
+	background url(../img/fondo-main.jpg) #2e2312
+	font-family verdana, arial, sans-serif
+	//text-align center
+#wrapper
+	position relative
+	margin 40px auto 70px auto
+	max-width 1024px
+	min-width 320px
+	width 80%
+	//background rgba(100, 200, 200, 0.1)
+	
+	.conten1
+		borderRadius 0 0 10px 10px
+	.conten2
+		borderRadius 10px
+	.conten1
+	.conten2
+		background-color #E7E6E5
+		margin-bottom 20px
+		position relative
+
+///////////////////// CONTACTO BUSCAR /////////////////////
+#search
+	color white
+	text-align right
+	font-size 0.8em
+	margin-bottom 5px
+	a
+		color white
+	a:hover
+		color #44C2FB
+		//color #F27490
+	span
+		margin 0 5px
+		font-size 1.5em
+	input[type="search"]
+		borderRadius 7px
+
+aside
+	position absolute
+	height 40px
+	right 10px
+	bottom 10px
+	ul#redes
+		padding 0 !important
+		margin 0 !important
+		list-style none
+		li
+			display inline-block
+			width 37px
+			height 40px
+			a
+				display block
+				width 37px
+				height 40px
+				background-image url(../img/sprite-icons.png)
+		li:nth-child(2)
+			a
+				background-position -37px 0
+		li:nth-child(3)
+			a
+				background-position -74px 0
+
+
+///////////////////// HEADER /////////////////////
+header
+	position relative
+	background #E7E6E5 url(../img/fondo-header.jpg)
+	//border-bottom 1px solid #999
+	borderRadius 10px 10px 0 0 
+	width 100%
+
+#logo
+	position relative
+	display inline-block
+	margin 10px 1% 0 1%
+	max-width 451px
+	width 98%
+	img
+		max-width 100%
+		height auto
+		width auto\\9
+
+///////////////////// NAVEGACION /////////////////////
+nav
+	ul
+		padding 0
+		margin-left 18px
+	ul#menu
+		text-align center
+		position relative 
+		>li
+			display inline-block
+			vertical-align top
+			position relative
+			width 17.95%
+			min-width 130px//140px
+			height 30px
+			margin 5px 0 0 -18px
+			>a
+			>span
+				display block !important
+				position absolute
+				top 0
+				height 30px
+			>a
+				padding-top 6px
+				height 24px
+				left 20px
+				right 20px
+				color white !important
+				background #2C2214
+				font-family verdana, arial, sans-serif
+				font-size 12px	
+			>span
+				width 20px
+				background-image url(../img/puntas.png)
+			>span:nth-child(3)
+			>span:nth-child(2)
+				background-position -20px 0
+				right 0
+			>span:nth-child(1)
+				background-position 0 0 
+			&:first-child
+				>a
+					padding-left 20px
+					left 0
+			&:last-child
+				>a
+					right 0
+			&:hover ul#sub-menu
+				display block !important		
+	ul#sub-menu
+		position absolute
+		top 30px 
+		z-index 999
+		width 140px
+		display none
+		text-align left
+		background #2C2214
+		margin-left 17px
+		borderRadius 0 0 5px 5px
+		filter unquote('alpha(opacity=90)')
+		opacity .90
+		padding 10px
+		li
+			position relative
+			margin-top 5px
+			border-bottom 1px solid #555555
+			&:hover
+				background darkred
+			a
+				display block
+				color white
+				font-size 0.75em
+
+///////////////////// CONTENIDO HOME ////////////////////
+
+#contenido-home
+	padding 10px
+	min-height 200px
+	margin-bottom 25px !important
+
+.flexslider
+	position relative
+	gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% )
+	max-width 850px
+	width auto\\9
+	margin 20px auto 50px auto !important
+	img
+		flotarIz()	
+	.cajatexto
+		max-height 209px //Esta es la altura de la foto
+		overflow hidden
+		h3
+			text-align left
+			margin 5px 5px 10px 10px
+			font-size 1.5em 
+			font-family 'miller',Arial,Sans-serif
+		p
+			margin 0 5px 0 10px
+			font-family 'Times New Roman', Times, serif
+			font-size 1em
+	.flex-caption
+		display none  
+
+#tips-home
+	background-image url(../img/fondo-tips.jpg) 
+	text-align center
+	div
+		display inline-block
+		width 32.5%
+		vertical-align top
+		borderRadius 20px
+		h3
+			display inline-block
+			width 193px
+			height 67px
+			font-weight normal
+			background url(../img/cabezote.png)
+			color white
+			margin -12px 0 0 0
+		p
+			width 90% 
+			margin 20px auto 20px auto
+			color black
+			text-align justify
+
+
+
+///////////////////// FOOTER /////////////////////	
+footer
+	position relative
+	margin-top 25px
+	text-align center
+	a
+		color black
+	#top-footer
+		position absolute
+		width 100%
+		height 30px
+		borderRadius 10px 10px 0 0
+		gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% ) 
+	ul
+		padding 0
+		list-style none
+		font-size 12px
+	>ul	
+		>li:first-child
+			min-width 80px
+			width 80px	
+		>li
+			text-align center
+			min-width 120px
+			width 17%
+			vertical-align top
+			display inline-block
+			div
+				position relative
+				height 30px
+				gradientLinear( top, #FCFCFC, 0%, #C9C9C9, 50% )
+				borderRadius 10px
+				a
+					display block
+					padding-top 7px
+				a:hover
+					color #44C2FB
+				span
+					display block
+					width 20px
+					height 30px
+					position absolute
+					right 0
+					top 0
+					background url('../img/sprite-icons.png') no-repeat
+					background-position -113px -1px
+	.submenu-footer
+		li
+			margin-bottom 5px
+			&:hover
+				background #44C2FB
+	p 
+		text-align center
+		font-size 11px
+		padding-bottom 10px
+		//font-family 'miller',Arial,Sans-serif
+
+
+///////////////////// MEDIA QUERYS /////////////////////
+
+@media screen and (min-width:801px) and (max-width:1000px)
+	#wrapper
+		width 90%
+	.flexslider
+		.cajatexto
+			h3
+				font-size 1em
+
+@media screen and (max-width:800px)
+	#wrapper
+		width 95%
+	nav
+		border-top 1px solid #999
+
+	.flexslider
+		max-width 550px
+		margin auto
+		img 
+			width 100%
+		.cajatexto
+			display none
+			visibility: hidden				
+		.flex-caption
+			display inline
+
+@media screen and (max-width:650px)
+	#tips-home
+		background none !important
+		div
+			width 100%
+			background-image url(../img/fondo-tips.jpg) 
+			background-position 0 -50px
+			margin-bottom 25px 
+			p
+				width 70%
+	
+
