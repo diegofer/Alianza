@@ -344,13 +344,18 @@ body {
   position: relative;
 }
 #search {
-  color: #fff;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  background-color: #e7e6e5;
+  padding: 5px 1% 5px 1%;
   text-align: right;
   font-size: 0.8em;
-  margin-bottom: 5px;
 }
 #search a {
-  color: #fff;
+  color: #000;
 }
 #search a:hover {
   color: #44c2fb;
@@ -365,6 +370,7 @@ body {
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px;
+  background: #ccc;
 }
 aside {
   position: absolute;
@@ -396,91 +402,62 @@ aside ul#redes li:nth-child(3) a {
 }
 header {
   position: relative;
-  background: #e7e6e5 url("../img/fondo-header.jpg");
-  -webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
-  -ms-border-radius: 10px 10px 0 0;
-  -o-border-radius: 10px 10px 0 0;
-  border-radius: 10px 10px 0 0;
-  width: 100%;
+  background: #2d2214 !important;
+  background: -moz-linear-gradient(top, #403820 0%, #2d2214 50%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #403820), color-stop(50%, #2d2214)) !important;
+  background: -webkit-linear-gradient(top, #403820 0%, #2d2214 50%) !important;
+  background: -o-linear-gradient(top, #403820 0%, #2d2214 50%) !important;
+  background: -ms-linear-gradient(top, #403820 0%, #2d2214 50%) !important;
+  background: linear-gradient(top, #403820 0%, #2d2214 50%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820,endColorstr=#2d2214,GradientType=0 );
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820, endColorstr=#2d2214)";
 }
 #logo {
   position: relative;
-  display: inline-block;
-  margin: 10px 1% 0 1%;
-  max-width: 451px;
-  width: 98%;
+  float: left;
+  min-width: 305px;
+  height: 75px;
 }
 #logo img {
-  max-width: 100%;
-  height: auto;
-  width: auto \ 9;
+  position: relative;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+nav {
+  float: right;
+  position: relative;
 }
 nav ul {
   padding: 0;
-  margin-left: 18px;
 }
 nav ul#menu {
-  text-align: center;
+  text-align: right;
   position: relative;
 }
 nav ul#menu >li {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  width: 17.95%;
-  min-width: 130px;
-  height: 30px;
-  margin: 5px 0 0 -18px;
-}
-nav ul#menu >li >a,
-nav ul#menu >li >span {
-  display: block !important;
-  position: absolute;
-  top: 0;
-  height: 30px;
+  text-align: center;
+  border-left: solid #2b0000 2px;
 }
 nav ul#menu >li >a {
-  padding-top: 6px;
-  height: 24px;
-  left: 20px;
-  right: 20px;
-  color: #fff !important;
-  background: #2c2214;
-  font-family: verdana, arial, sans-serif;
-  font-size: 12px;
+  display: block;
+  padding: 0 10px;
+  height: 100%;
+  line-height: 75px;
+  color: #fff;
 }
-nav ul#menu >li >span {
-  width: 20px;
-  background-image: url("../img/puntas.png");
-}
-nav ul#menu >li >span:nth-child(3),
-nav ul#menu >li >span:nth-child(2) {
-  background-position: -20px 0;
-  right: 0;
-}
-nav ul#menu >li >span:nth-child(1) {
-  background-position: 0 0;
-}
-nav ul#menu >li:first-child >a {
-  padding-left: 20px;
-  left: 0;
-}
-nav ul#menu >li:last-child >a {
-  right: 0;
-}
-nav ul#menu >li:hover ul#sub-menu {
+nav ul#menu >li:hover .sub-menu {
   display: block !important;
 }
-nav ul#sub-menu {
+nav .sub-menu {
   position: absolute;
-  top: 30px;
   z-index: 999;
   width: 140px;
   display: none;
   text-align: left;
-  background: #2c2214;
-  margin-left: 17px;
+  background: #000;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   -ms-border-radius: 0 0 5px 5px;
@@ -490,88 +467,92 @@ nav ul#sub-menu {
   opacity: 0.9;
   padding: 10px;
 }
-nav ul#sub-menu li {
+nav .sub-menu li {
   position: relative;
   margin-top: 5px;
   border-bottom: 1px solid #555;
 }
-nav ul#sub-menu li:hover {
+nav .sub-menu li:hover {
   background: #8b0000;
 }
-nav ul#sub-menu li a {
+nav .sub-menu li a {
   display: block;
   color: #fff;
   font-size: 0.75em;
 }
 #contenido-home {
   padding: 10px;
-  min-height: 200px;
   margin-bottom: 25px !important;
 }
-.flexslider {
+#galeria {
   position: relative;
-  background: #c9c9c9 !important;
-  background: -moz-linear-gradient(top, #fcfcfc 0%, #c9c9c9 50%) !important;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(50%, #c9c9c9)) !important;
-  background: -webkit-linear-gradient(top, #fcfcfc 0%, #c9c9c9 50%) !important;
-  background: -o-linear-gradient(top, #fcfcfc 0%, #c9c9c9 50%) !important;
-  background: -ms-linear-gradient(top, #fcfcfc 0%, #c9c9c9 50%) !important;
-  background: linear-gradient(top, #fcfcfc 0%, #c9c9c9 50%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fcfcfc,endColorstr=#c9c9c9,GradientType=0 );
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#fcfcfc, endColorstr=#c9c9c9)";
-  max-width: 850px;
-  width: auto \ 9;
-  margin: 20px auto 50px auto !important;
+  width: 95%;
+  margin: 20px auto;
+  background: #000;
 }
-.flexslider img {
-  float: left;
+#galeria #fotos {
+  position: relative;
+  width: 60%;
 }
-.flexslider .cajatexto {
-  max-height: 209px;
+#galeria #fotos .flexslider {
+  margin: 0 !important;
+}
+#galeria ul#control {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  left: 60.5%;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+#galeria ul#control li {
+  position: relative;
+  height: 24.3%;
   overflow: hidden;
 }
-.flexslider .cajatexto h3 {
-  text-align: left;
-  margin: 5px 5px 10px 10px;
-  font-size: 1.5em;
-  font-family: 'miller', Arial, Sans-serif;
+#galeria ul#control li img {
+  max-width: 30%;
+  width: auto \ 9;
+  height: 100%;
 }
-.flexslider .cajatexto p {
-  margin: 0 5px 0 10px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1em;
+#galeria ul#control li p,
+#galeria ul#control li a {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
-.flexslider .flex-caption {
-  display: none;
-}
-#tips-home {
-  background-image: url("../img/fondo-tips.jpg");
-  text-align: center;
-}
-#tips-home div {
-  display: inline-block;
-  width: 32.5%;
-  vertical-align: top;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-}
-#tips-home div h3 {
-  display: inline-block;
-  width: 193px;
-  height: 67px;
-  font-weight: normal;
-  background: url("../img/cabezote.png");
+#galeria ul#control li p {
+  left: 31%;
   color: #fff;
-  margin: -12px 0 0 0;
+  font-size: 14px;
+  margin: 0;
+  z-index: 1;
 }
-#tips-home div p {
-  width: 90%;
-  margin: 20px auto 20px auto;
-  color: #000;
-  text-align: justify;
+#galeria ul#control li a {
+  left: 0;
+  z-index: 2;
+}
+#galeria ul#control li a:hover {
+  background: #fff !important;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+}
+#galeria ul#control li:nth-child(1),
+#galeria ul#control li:nth-child(2),
+#galeria ul#control li:nth-child(3) {
+  margin-bottom: 1%;
+}
+#galeria ul#control li:nth-child(2n+0),
+#galeria ul#control li:nth-child(2n+1) {
+  background: #111;
+}
+#galeria ul#control .flex-active {
+  background: #222 !important;
 }
 footer {
   position: relative;
@@ -666,43 +647,42 @@ footer p {
   #wrapper {
     width: 90%;
   }
-  .flexslider .cajatexto h3 {
-    font-size: 1em;
-  }
 }
 @media screen and (max-width:800px) {
   #wrapper {
     width: 95%;
   }
-  nav {
-    border-top: 1px solid #999;
-  }
-  .flexslider {
-    max-width: 550px;
-    margin: auto;
-  }
-  .flexslider img {
-    width: 100%;
-  }
-  .flexslider .cajatexto {
-    display: none;
-    visibility: hidden;
-  }
-  .flexslider .flex-caption {
-    display: inline;
-  }
 }
 @media screen and (max-width:650px) {
-  #tips-home {
-    background: none !important;
-  }
-  #tips-home div {
+  nav {
     width: 100%;
-    background-image: url("../img/fondo-tips.jpg");
-    background-position: 0 -50px;
-    margin-bottom: 25px;
   }
-  #tips-home div p {
-    width: 70%;
+  nav ul#menu {
+    text-align: center;
+  }
+  #galeria {
+    background: none;
+  }
+  #galeria #fotos {
+    width: 100%;
+  }
+  #galeria ul#control {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+  #galeria ul#control li {
+    display: inline-block;
+    background: none !important;
+    width: 22%;
+  }
+  #galeria ul#control li img {
+    max-width: 100%;
+    width: auto \ 9;
+    height: auto;
+  }
+  #galeria ul#control li p {
+    left: 100%;
   }
 }

@@ -2,73 +2,52 @@
 {% block title %}Inicio{% endblock%}
 
 {% block head_css %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css">
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/flexslider/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css">
 {% endblock %}
 
 {% block section_contenido %}
  
 <section id="contenido-home" class="conten1">
- 	
-	<div class="flexslider">
-
-		<ul class="slides">
+	<div id="galeria">
+		<div id="fotos">
+			<div class="flexslider">
+				<ul class="slides">
+					<li><img src="{{STATIC_URL}}img/b1.jpg"/></li>
+					<li><img src="{{STATIC_URL}}img/b2.jpg"/></li>
+					<li><img src="{{STATIC_URL}}img/b1.jpg"/></li>
+					<li><img src="{{STATIC_URL}}img/b2.jpg"/></li>		
+				</ul>
+			</div>
+		</div>
+		<ul id="control">
 			<li>
-				<a href="#"><img src="{{STATIC_URL}}img/B3.jpg" title="Se Intensifican las Misiones"></a>
-				<p class="flex-caption">CONGRESO NACIONAL DE MISIONES</p>
-			  
-				<div class="cajatexto">
-					<h3>CONGRESO NACIONAL DE MISIONES</h3>	
-					<p>
-						“Comprometido con la tarea misional de la IACYMC dentro y fuera del país, orientando la plantación de nuevas iglesias tanto internas en Colombia, como externas en el exterior, ayudando a la iglesia en el desarrollo de un ministerio sano y sanador”
-					</p>
-				</div>
+				<a href=""></a>
+				<img src="{{STATIC_URL}}img/b1.jpg"/>
+				<p>Congreso regional de mujeres</p>
 			</li>
 			<li>
-				<a href="#">
-					<img src="{{STATIC_URL}}img/B2.jpg" title="Se Intensifican las Misiones">
-			    	<p class="flex-caption">Se Incrementan las Misiones</p>
-			    </a>
-				<div class="cajatexto">
-					<h3>Se Incrementan las Misiones</h3>	
-					<p>
-						Comprometido con la tarea misional de la IACYMC dentro y fuera del país,
-					</p>
-				</div>
+				<img src="{{STATIC_URL}}img/b2.jpg"/>
+				<p>Congreso regional de mujeres</p>
+				<a href=""></a>
+			</li>
+			<li>
+				<img src="{{STATIC_URL}}img/b1.jpg"/>
+				<p>Congreso regional de mujeres</p>
+				<a href=""></a>
+			</li>
+			<li>
+				<img src="{{STATIC_URL}}img/b2.jpg"/>
+				<p>Congreso regional de mujeres</p>
+				<a href=""></a>
 			</li>
 		</ul>
 
 	</div>
-
-	<aside>
-		<ul id="redes">
-			<li><a href="http://www.facebook.com/pages/alianza-cristiana-y-misionera-colombiana/146113898826256"></a></li>
-			<li><a href="http://twitter.com"></a></li>
-			<li><a href="http://www.youtube.com/user/NEWKOKO712?feature=watch"></a></li>
-		</ul>
-	</aside>
-
 </section>
 
 <section id="tips-home" class="conten2">
-	<div>
-		<h3>¿Vienes por<br/><span>Primera vez?</span></h3>	
-		<p>
-			Encuentra un espacio creado especialmente para tí. <a href="primeravez.html">ver más...</a>
-		</p>
-	</div>
-	<div>
-        <h3>La Alianza en<br/><span class="linea2">Colombia</span></h3>     
-        <p>
-        	Descubre donde se encuentran ubicadas nuestras sedes en el territorio colombiano. <a href="alianzaencolombia.html">ver más...</a>
-        </p>
-	</div>
-	<div>
-        <h3>Cómo<br/><span>Involucarse</span></h3>    
-        <p>
-        	El sacrificio de Jesucristo y su misericordia para con todos es el modelo a serguir para completar su gran comisión. <a href="involucrarse.html">ver más...</a>
-        </p>
-	</div>
+	
 
 </section>
 
@@ -76,19 +55,22 @@
 
 
 {% block bootom_script %}
-<script src="{{STATIC_URL}}js/lib/flexslider.js"></script>
-<script type="text/javascript">
-	$(window).load( encenderFlexSlider );
-	 
-	function encenderFlexSlider()
-	{
-	   $('.flexslider').flexslider({ 
-			directionNav: false,
-			pauseOnHover: true,
-			slideshow: true
-		});
-	}
-</script>
+	<script src="{{STATIC_URL}}js/lib/jquery.flexslider-min.js"></script>
+
+	<script type="text/javascript" charset="utf-8">
+
+  		$(window).load(function() {
+   			$('.flexslider').flexslider({
+   					controlNav: true,
+   					directionNav: false,
+   					pauseOnHover: true,
+   					//controlsContainer: ".flexslider-container", 
+   					//animation: "slide",
+   					manualControls: "#control li",
+   				});
+        });
+
+	</script>
 
 {% endblock %}
 
