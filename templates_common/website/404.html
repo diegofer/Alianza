@@ -1,6 +1,10 @@
 {% extends 'website/base.html' %}
 {% block title %}404{% endblock%}
 
+{% block head_css %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?103">
+{% endblock %}
+
 {% block section_contenido %}
 <h1>Los sentimos, la pagina solicitada no existe o esta en construcción</h1>
 
