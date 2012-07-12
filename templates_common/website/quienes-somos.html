@@ -1,0 +1,73 @@
+{% extends 'website/base.html' %}
+{% block title %}Quienes somos{% endblock%}
+
+{% block head_css %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?105">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/quienes-somos.css">
+{% endblock %}
+
+{% block section_contenido %}
+	<section id="quienes" class="conten1 clearfix">
+		<div id="header2" class="clearfix">
+			<div>
+				<img src="{{STATIC_URL}}img/reloj1.jpg">
+				<h1>CUANDO TODO EMPEZO</h1>
+			</div>
+			
+		</div>
+		<section id="cuerpo2" class="clearfix">
+			<article>
+				<p>La Alianza Cristiana y Misionera (AC&M) es una alianza de cristianos unidos en iglesias locales, dedicados a cumplir la "Gran Comisión" (S. Mateo 28,16-20; S. Marcos 16,14-18; S. Lucas 24,44-49; S. Juan 20,19-23 y Hechos 1,4-8) entregada por El Señor Jesucristo:Por tanto, vayan y hagan discípulos de todas las naciones, bautizándolos en el nombre del Padre y del Hijo y del Espíritu Santo, enseñándoles a obedecer todo lo que les he mandado a ustedes. Y les aseguro que estaré con ustedes siempre, hasta el fin del mundo (S. Mateo 28,19-20 NIV). 
+				</p>
+				<p>Fue fundada por Pastor de origen canadiense Dr. Alberto Benjamín Simpson en 1887 (con la forma de dos sociedades misioneras: "The Christian Alliance" y "The Evangelical Missionary Alliance", más tarde "The International Missionary Alliance"), evidentemente no como una denominación, sino que para organizar la movilización de cristianos en general al trabajo misionero en el extranjero (específicamente fuera de los Estados Unidos de América).
+				</p>
+				<p>Hacia mediados de los años setenta, se hizo cada vez más claro que la Alianza Cristiana y Misionera era sin lugar a dudas una nueva denominación. De ese modo, se formalizó como iglesia independiente en 1974, formulando sus propias ordenanzas y constitución. En 1975, se organiza igualmente la Confraternidad Mundial Aliancista (Alliance World Fellowship (AWF)).
+				</p>
+				<p>La ACyM se ha involucrado también en muchos otros tipos de trabajo misionero en la sociedad moderna, tales como : las comunicaciones, el servicio médico, la traducción, y la ayuda solidaria al desarrollo económico educación entre muchos otros aspectos, Aunque la gran mayoría de los misioneros de la ACyM siguen proviniendo de los Estados Unidos, obreros de otras nacionalidades también han sido apoyados por iglesias de sus respectivos países. 
+				</p>
+				<p>En los  Estados Unidos existen alrededor de 2.000 iglesias aliancistas, con más de 429.000 miembros activos. En Canadá, hay unas 440 iglesias, con más de 124.000 miembros. En América Latina existen al redor de 1.560 iglesias y más de 520.000 miembros activos. En el mundo entero la alianza suma más de 12 millones de miembros, y está presente en más de 90 países.	
+				</p>
+			</article>
+
+			<section id="videos">
+				<h2>Conoce nuestras Instituciones</h2>
+				<article>
+					<h3>Historia de la Alianza</h3>
+					<div class="video-container">
+			            <iframe width="560" height="315" src="http://www.youtube.com/embed/iSyRHrvrL2c" frameborder="0" allowfullscreen>
+			            </iframe>
+	          		</div>
+          		</article>
+          		<article>
+					<h3>SEBAC</h3>
+					<div class="video-container">
+			            <iframe width="560" height="315" src="http://www.youtube.com/embed/29c67LHaINo" frameborder="0" allowfullscreen></iframe>
+	          		</div>
+          		</article>
+          		<article>
+					<h3>Centro de convenciones Ebenezer</h3>
+					<div class="video-container">
+			            <iframe width="420" height="315" src="http://www.youtube.com/embed/DMYamhSOphg" frameborder="0" allowfullscreen></iframe>
+	          		</div>
+          		</article>
+
+			</section>
+		</section>
+
+		<div id="footer2" class="clearfix">
+			<a href="#">
+				<img src="{{STATIC_URL}}img/logo2.png">
+			</a>
+			<aside id="aside-quienes">
+				<ul id="redes">
+					<li><a href="http://www.facebook.com/pages/alianza-cristiana-y-misionera-colombiana/146113898826256"></a></li>
+					<li><a href="http://twitter.com"></a></li>
+					<li><a href="http://www.youtube.com/user/NEWKOKO712?feature=watch"></a></li>
+				</ul>
+			</aside>	
+		</div>
+		
+
+	</section>
+
+{% endblock %}

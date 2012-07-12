@@ -61,6 +61,8 @@ td{vertical-align:top}
 .clearfix:before,.clearfix:after{content:"";display:table}
 .clearfix:after{clear:both}
 .clearfix{*zoom:1}
+.video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}
+.video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
 body{background:url("../img/fondo-main.jpg") #2e2312;font-family:verdana,arial,sans-serif}
 #wrapper{position:relative;margin:40px auto 70px auto;max-width:1024px;min-width:320px;width:80%;}
 #wrapper .conten1{-webkit-border-radius:0 0 10px 10px;-moz-border-radius:0 0 10px 10px;-ms-border-radius:0 0 10px 10px;-o-border-radius:0 0 10px 10px;border-radius:0 0 10px 10px}
@@ -71,12 +73,13 @@ body{background:url("../img/fondo-main.jpg") #2e2312;font-family:verdana,arial,s
 #search a:hover{color:#44c2fb}
 #search span{margin:0 5px;font-size:1.5em}
 #search input[type="search"]{-webkit-border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;border-radius:7px;background:#ccc}
-aside{position:absolute;height:40px;right:10px;bottom:10px;}
+aside{height:40px;}
 aside ul#redes{padding:0 !important;margin:0 !important;list-style:none;}
 aside ul#redes li{display:inline-block;width:37px;height:40px;}
 aside ul#redes li a{display:block;width:37px;height:40px;background-image:url("../img/sprite-icons.png")}
 aside ul#redes li:nth-child(2) a{background-position:-37px 0}
 aside ul#redes li:nth-child(3) a{background-position:-74px 0}
+#aside-home{position:absolute;right:20px;bottom:20px}
 header{position:relative;background:#2d2214 !important;background:-moz-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#403820),color-stop(50%,#2d2214)) !important;background:-webkit-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-o-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-ms-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:linear-gradient(top,#403820 0%,#2d2214 50%) !important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820,endColorstr=#2d2214,GradientType=0 );-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820, endColorstr=#2d2214)"}
 #logo{position:relative;float:left;min-width:305px;height:75px;}
 #logo img{position:relative;margin-left:5px;margin-top:20px}
@@ -109,10 +112,10 @@ nav .sub-menu li a{display:block;color:#fff;font-size:.75em}
 #tips-home article:nth-child(2),#tips-home article:nth-child(3){position:absolute;top:0;bottom:0}
 #tips-home article:nth-child(2){left:33.5%}
 #tips-home article:nth-child(3){right:0}
-#tips-home article h3{background:#603;color:#fff;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;-ms-border-radius:10px 10px 0 0;-o-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;margin:0;font-size:1em;font-weight:normal;padding:5px;text-align:center}
+#tips-home article h3{background:#8a191d;color:#fff;-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;-ms-border-radius:10px 10px 0 0;-o-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;margin:0;font-size:1em;font-weight:normal;padding:5px;text-align:center}
 #tips-home article div{text-align:center}
 #tips-home article img{max-width:100%;width:auto \ 9;margin:auto}
-#tips-home article p{padding:0 10px;font-size:14px;}
+#tips-home article p{padding:0 10px;font-size:14px;text-align:justify;}
 #tips-home article p span{display:block;text-align:right;font-size:1em}
 #tips-home article a{position:relative;display:block;float:right;margin-right:10px;margin-bottom:10px !important;}
 #tips-home article a div{display:inline-block;margin-left:5px;width:30px;height:30px;background:url("../img/mas.png") no-repeat}

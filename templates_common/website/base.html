@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width , initial-scale=1 ,maximum-scale=1" /> 
 	<meta name="robots" content="noindex,nofollow,noarchive,noodp,nosnippet">
 	<link rel="shortcut icon" href="{{STATIC_URL}}img/favicon.png" type="image/png">
-	{% block head_css %}{% endblock %}
+	{% block head_css %} {% endblock %}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<!--<script type="text/javascript" src="{{STATIC_URL}}js/lib/jquery-1.7.2.min.js" ></script>-->
+	<script>window.jQuery || document.write('<script src="{{STATIC_URL}}js/lib/jquery-1.7.2.min.js"><\/script>')</script>
 	{% block head_script %}{% endblock %}
 
 	<!--[if lt IE 9]>
@@ -42,8 +42,9 @@
 			<ul id="menu">
 				<li><a href="/">INICIO</a></li>
 				<li>
-					<a href="/quienes-somos.html">QUIENES SOMOS</a>
+					<a href="/quienes-somos">QUIENES SOMOS</a>
 					<ul class="sub-menu">
+						<li><a href="/quienes-somos">Cuando todo empezó</a></li>
 						<li><a href="/mision.html">Misión</a></li>
 						<li><a href="/">Visión</a></li>
 						<li><a href="/">Oficina Nacional</a></li>
@@ -142,7 +143,7 @@
 			Todos los derechos reservados ©2012<br/> Iglesia Alianza Cristiana & Misionera Colombiana
 		</p>
 
-		<aside>
+		<aside id="aside-home">
 			<ul id="redes">
 				<li><a href="http://www.facebook.com/pages/alianza-cristiana-y-misionera-colombiana/146113898826256"></a></li>
 				<li><a href="http://twitter.com"></a></li>

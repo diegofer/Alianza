@@ -8,3 +8,6 @@ from django.template import RequestContext
 def home(request):
 	return render_to_response('website/home.html', context_instance=RequestContext(request))
 
+def quienes_somos(request):
+	return render_to_response('website/quienes-somos.html', context_instance=RequestContext(request))
+

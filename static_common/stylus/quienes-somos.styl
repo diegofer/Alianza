@@ -1,0 +1,72 @@
+@import "help"
+
+#quienes
+	#header2
+		position relative !important
+		background #E0D29C
+		margin-top 2%
+		div
+			position relative 
+			margin 3% 0
+		h1
+			position absolute
+			top 0
+			z-index 0
+			margin-left 3%
+		img
+			position relative
+			left 0
+			width 100%
+			height auto\\9
+			z-index 1
+			//visibility hidden
+	#cuerpo2
+		position relative
+		padding 20px
+		article
+		#videos
+			position relative
+		>article
+			flotarIz()
+			width 60%
+			border-right solid #CCCC99 2px
+			text-align justify	
+			p
+				padding-right 15px
+		#videos
+			flotarDer()
+			width 39%
+			article
+				padding-left 10px
+				margin-top 20px
+			h2
+				font-family "Times New Roman", Georgia,Serif
+				color #8A191D
+				padding-left 10px
+				margin-top 15px
+			h3
+				margin 0
+				font-size 1em
+	#footer2
+		padding 20px
+		>a
+			display inline-block
+		img
+			max-width 276px
+			width 100%
+			height auto\\9
+		#aside-quienes
+			flotarDer()
+			margin-top 10px
+			 
+
+@media screen and (max-width:650px)
+	#quienes
+		#cuerpo2
+			>article
+				width 100%
+				border-right none
+				p
+					padding-right 0
+			#videos
+				width 100%
