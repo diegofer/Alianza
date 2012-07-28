@@ -1,0 +1,14 @@
+#header-nosotros{background-color:#dfdfdd;}
+#header-nosotros .banner{background-color:#e0d29c}
+#cuerpo2{position:relative;padding:20px;}
+#cuerpo2 article,#cuerpo2 #videos{position:relative}
+#cuerpo2 >article{float:left;width:60%;border-right:solid #cc9 2px;text-align:justify;}
+#cuerpo2 >article p{padding-right:15px}
+#cuerpo2 #videos{float:right;width:39%;}
+#cuerpo2 #videos article{padding-left:10px;margin-top:20px}
+#cuerpo2 #videos h2{font-family:"Times New Roman",Georgia,Serif;color:#8a191d;padding-left:10px;margin-top:15px}
+#cuerpo2 #videos h3{margin:0;font-size:1em}
+#cuerpo2 #footer2{padding:20px;}
+#cuerpo2 #footer2 >a{display:inline-block}
+#cuerpo2 #footer2 img{max-width:276px;width:100%;height:auto \ 9}
+#cuerpo2 #footer2 #aside-quienes{float:right;margin-top:10px}

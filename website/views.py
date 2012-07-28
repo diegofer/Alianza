@@ -10,10 +10,13 @@ from django.core.mail import EmailMessage
 
 def home(request):
 	noticias = noticia.objects.all()
-	return render_to_response('website/home1.html',{'noticias':noticias}, context_instance=RequestContext(request))
+	return render_to_response('website/home.html',{'noticias':noticias}, context_instance=RequestContext(request))
 
 def quienes_somos(request):
 	return render_to_response('website/quienes-somos.html', context_instance=RequestContext(request))
+
+def nosotros(request):
+	return render_to_response('website/nosotros.html', context_instance=RequestContext(request))
 
 def detalle_noticia(request, id_noticia):
 	dato = get_object_or_404(noticia, pk=id_noticia)
