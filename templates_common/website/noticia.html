@@ -1,0 +1,16 @@
+{% extends 'website/base.html' %}
+{% block title %}Inicio{% endblock%}
+
+{% block head_css %}
+{% endblock %}
+
+{% block section_contenido %}
+
+<section id="contenido-noticia" class="conten1 clearfix">
+	<h1>{{noticia.titulo|title}}</h1>
+	<h4>{{ noticia.fecha|date:'SHORT_DATETIME_FORMAT'}}</h4>
+	<img src="{{MEDIA_URL}}{{noticia.imagen}}">
+	<p>{{noticia.contenido}}</p>
+</section>
+
+{% endblock %}
