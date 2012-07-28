@@ -68,11 +68,21 @@ body{font-family:verdana,arial,sans-serif}
 #wrapper2{margin:30px auto 50px auto}
 .video-container{position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}
 .video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%}
+.header2 .banner{position:relative;margin:2% 0;}
+.header2 .banner div{position:relative;margin:3% 0}
+.header2 .banner h1{position:absolute;top:0;z-index:0;font-size:1em;margin:0}
+.header2 .banner img{position:relative;left:0;width:100%;height:auto \ 9;z-index:100}
 #search{-webkit-border-radius:10px 10px 0 0;-moz-border-radius:10px 10px 0 0;-ms-border-radius:10px 10px 0 0;-o-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;background-color:#dfdfdd;padding:5px 1% 5px 1%;text-align:right;font-size:.8em;}
 #search a{color:#000}
 #search a:hover{color:#44c2fb}
 #search span{margin:0 5px;font-size:1.5em}
 #search input[type="search"]{-webkit-border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;border-radius:7px;background:#bbbcc1}
+aside{height:40px;}
+aside ul#redes{padding:0 !important;margin:0 !important;list-style:none;}
+aside ul#redes li{display:inline-block;width:37px;height:40px;}
+aside ul#redes li a{display:block;width:37px;height:40px;background-image:url("../img/sprite-icons.png")}
+aside ul#redes li:nth-child(2) a{background-position:-37px 0}
+aside ul#redes li:nth-child(3) a{background-position:-74px 0}
 header{position:relative;background:#2d2214 !important;background:-moz-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#403820),color-stop(50%,#2d2214)) !important;background:-webkit-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-o-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-ms-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:linear-gradient(top,#403820 0%,#2d2214 50%) !important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820,endColorstr=#2d2214,GradientType=0 );-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820, endColorstr=#2d2214)"}
 #logo{position:relative;float:left;max-width:338px;width:100%;margin:1% 1% 0 1%;}
 #logo img{max-width:100%;width:auto \ 9}
