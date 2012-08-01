@@ -1,0 +1,25 @@
+#fondo-sup,#fondo-inf{background:none !important;border-bottom:none;-webkit-box-shadow:none;-moz-box-shadow:none;-ms-box-shadow:none;-o-box-shadow:none;box-shadow:none;filter:none}
+#wrapper2{margin-top:0}
+#section-inf{background-color:#dfdfdd;-webkit-border-radius:0 0 15px 15px;-moz-border-radius:0 0 15px 15px;-ms-border-radius:0 0 15px 15px;-o-border-radius:0 0 15px 15px;border-radius:0 0 15px 15px}
+.header2 .banner div{background:#89191e}
+.header2 h1{position:relative !important;font-size:4em !important;font-family:'miller',Georgia,Serif;font-weight:normal;color:#fff;line-height:1em;}
+.header2 h1 span{padding-left:15%}
+#cuerpo2{position:relative;padding:20px;}
+#cuerpo2 #ministerios,#cuerpo2 article{position:relative;float:left}
+#cuerpo2 #ministerios{width:29%;font-family:'miller',Georgia,Serif;}
+#cuerpo2 #ministerios h3{margin:0 0 15px -20px;padding-left:20px;background:#e1d29c;font-size:14px}
+#cuerpo2 #ministerios div{padding:5% 0 4% 0;background:#1f1000;margin-bottom:5px;}
+#cuerpo2 #ministerios div img{max-width:100%;width:auto \ 9;height:auto}
+#cuerpo2 >article{width:70%;text-align:justify;}
+#cuerpo2 >article p{padding-left:15px}
+#footer2{padding:20px;}
+#footer2 >a{display:inline-block}
+#footer2 img{max-width:276px;width:100%;height:auto \ 9}
+#footer2 #aside-quienes{float:right;margin-top:10px;}
+#footer2 #aside-quienes ul li{display:inline-block}
+@media screen and (max-width:650px){.header2 h1{font-size:2em !important}
+#cuerpo2 >article{width:100%;border-right:none;}
+#cuerpo2 >article p{padding-right:0}
+#cuerpo2 #ministerios{width:100%;text-align:center;}
+#cuerpo2 #ministerios div{width:100px;display:inline-block;-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;-o-border-radius:15px;border-radius:15px}
+}

@@ -77,12 +77,13 @@ body{font-family:verdana,arial,sans-serif}
 #search a:hover{color:#44c2fb}
 #search span{margin:0 5px;font-size:1.5em}
 #search input[type="search"]{-webkit-border-radius:7px;-moz-border-radius:7px;-ms-border-radius:7px;-o-border-radius:7px;border-radius:7px;background:#bbbcc1}
-aside{height:40px;}
+aside{text-align:center;}
 aside ul#redes{padding:0 !important;margin:0 !important;list-style:none;}
-aside ul#redes li{display:inline-block;width:37px;height:40px;}
+aside ul#redes li{width:37px;height:40px;}
 aside ul#redes li a{display:block;width:37px;height:40px;background-image:url("../img/sprite-icons.png")}
 aside ul#redes li:nth-child(2) a{background-position:-37px 0}
 aside ul#redes li:nth-child(3) a{background-position:-74px 0}
+#aside-home{position:absolute;right:-39px;top:0}
 header{position:relative;background:#2d2214 !important;background:-moz-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#403820),color-stop(50%,#2d2214)) !important;background:-webkit-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-o-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:-ms-linear-gradient(top,#403820 0%,#2d2214 50%) !important;background:linear-gradient(top,#403820 0%,#2d2214 50%) !important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820,endColorstr=#2d2214,GradientType=0 );-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#403820, endColorstr=#2d2214)"}
 #logo{position:relative;float:left;max-width:338px;width:100%;margin:1% 1% 0 1%;}
 #logo img{max-width:100%;width:auto \ 9}
@@ -135,10 +136,13 @@ footer .submenu-footer li:hover{background:#44c2fb}
 footer p{text-align:center;font-size:11px;padding-bottom:10px}
 @media screen and (min-width:801px) and (max-width:1000px){#wrapper1,#wrapper2{width:90%}
 }@media screen and (max-width:800px){#wrapper1,#wrapper2{width:95%}
+#aside-home{position:relative;right:0;}
+#aside-home ul#redes li{display:inline-block}
 }@media screen and (max-width:650px){nav{width:100%;}
 nav ul#menu{text-align:center;}
 nav ul#menu >li{background:#dfdfdd;display:block;height:40px;width:90%;margin:0 auto 5px auto;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;}
 nav ul#menu >li >a{color:#000;line-height:40px}
-#tips-home article{position:relative !important;left:0 !important;margin-top:10px;width:100%}
+#tips-home article{position:relative !important;left:0 !important;margin-top:10px;width:100%;}
+#tips-home article a{position:relative !important}
 #preview-home article{width:337px}
 }

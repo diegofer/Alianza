@@ -4,24 +4,20 @@
 {% block head_css_sup %}
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/flexslider/flexslider.css">
 {% endblock %}
-
+{% block header2 %}{% endblock %}
+	
 {% block section_sup %}
 <section id="header-home">
 	<div id="galeria">
 		<div class="flexslider">
 			<ul class="slides">
-				<li><img src="{{STATIC_URL}}img/IMG4.jpg"></li>
-				<li><img src="{{STATIC_URL}}img/IMG3.jpg"></li>
-				<li><img src="{{STATIC_URL}}img/IMG2.jpg"></li>
-				<li><img src="{{STATIC_URL}}img/IMG1.jpg"></li>
-
-				<!--{% for dato in noticias %}
+				{% for noticia in noticias %}
 					<li>
-						<a href="{% url website.views.detalle_noticia dato.id %}"><img src="{{MEDIA_URL}}{{dato.imagen}}"></a>
+						<a href="{% url website.views.detalle_noticia noticia.slug %}"><img src="{{MEDIA_URL}}{{noticia.imagen}}"></a>
 					</li>
 					{% empty %}
 						<li>No se ha publicado ninguna noticia.</li>
-				{% endfor %}-->		
+				{% endfor %}		
 			</ul>
 		</div>
 	</div>
@@ -30,6 +26,13 @@
 
 
 {% block section_inf %}
+<aside id="aside-home">
+	<ul id="redes">
+		<li><a href="http://www.facebook.com/pages/IGLESIA-ALIANZA-CRISTIANA-MISIONERA-COLOMBIANA/251951971521832" target="_blank"></a></li>
+		<li><a href="http://twitter.com" target="_blank"></a></li>
+		<li><a href="http://www.youtube.com/channel/UClxDhbzp8VgAs79rCFE3O7w/feed" target="_blank"></a></li>
+	</ul>
+</aside>
 <section id="tips-home">
 	<article class="clearfix">
 		<h3>¿VISITAS ESTE SITIO POR PRIMERA VEZ?</h3>
@@ -42,7 +45,7 @@
 			donde estamos seguros que será el comienzo de un cambio importante para tu 
 			vida.
 		</p>
-		<a href="">ver más...<div></div></a>
+		<a href="{% url website.views.primera_vez %}">ver más...<div></div></a>
 	</article>
 	<article class="clearfix">
 		<h3>PENSAMOS EN TÍ Y ORAMOS POR TÍ</h3>
@@ -76,7 +79,7 @@
 		<h4>VIDEO DE LA SEMANA</h4>
 		<div id="video">
 			<div class="video-container">
-	        	<iframe width="560" height="315" src="http://www.youtube.com/embed/Bgi2ixXSWfg" frameborder="0" allowfullscreen></iframe>
+	        	{{ youtube.embed_code|safe}}<!--|default:"No se ha encontrado ningún video" }}-->		
 			</div>
 		</div>
 	</article><!--
@@ -103,8 +106,6 @@
 
   		$(window).load(function() {
    			$('.flexslider').flexslider({
-   					//controlNav: true,
-   					//directionNav: true,
    					pauseOnHover: true,
    					slideshowSpeed: 4000,
    					animation: "slide", 

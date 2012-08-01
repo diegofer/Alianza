@@ -7,9 +7,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'website.views.home'),
-    url(r'^quienes-somos/$', 'website.views.quienes_somos'),
     url(r'^nosotros/$', 'website.views.nosotros'),
-    url(r'^noticia/(?P<id_noticia>\d+)$', 'website.views.detalle_noticia'),
+    url(r'^noticias/(?P<noticia_slug>.+?)/?$', 'website.views.detalle_noticia'),
+    url(r'^primera-vez/$', 'website.views.primera_vez'), 
     url(r'^peticiones/$', 'website.views.peticiones'),
     url(r'^update/?$', 'github.views.update'),
 

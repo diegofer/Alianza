@@ -7,7 +7,7 @@
 	<meta name="robots" content="noindex,nofollow,noarchive,noodp,nosnippet">
 	<link rel="shortcut icon" href="{{STATIC_URL}}img/favicon.png" type="image/png">
 	{% block head_css_sup %}{% endblock %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base1.css?101">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?103">
 	{% block head_css_inf %}{% endblock %}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -71,7 +71,21 @@
 			</header>
 
 			<section id="section-sup">
-				{% block section_sup %}{% endblock %}	
+				{% block header2 %}
+				<section class="header2 clearfix">
+					<div class="banner clearfix">
+						<div>
+							{% if imag %}
+							<img src="{{STATIC_URL}}img/{{imag}}">
+							{% else %}{% endif %}
+							<h1>{{titulo|safe}}</h1>
+						</div>		
+					</div>
+				</section>
+				{% endblock header2 %}
+
+				{% block section_sup %}{% endblock %}
+				
 			</section>
 
 		</div>
@@ -152,15 +166,6 @@
 				<p>
 					Todos los derechos reservados ©2012<br/> Iglesia Alianza Cristiana & Misionera Colombiana
 				</p>
-
-				<aside id="aside-home">
-					<ul id="redes">
-						<li><a href="http://www.facebook.com/pages/alianza-cristiana-y-misionera-colombiana/146113898826256"></a></li>
-						<li><a href="http://twitter.com"></a></li>
-						<li><a href="http://www.youtube.com/user/NEWKOKO712?feature=watch"></a></li>
-					</ul>
-				</aside>
-
 			</footer>
 
 

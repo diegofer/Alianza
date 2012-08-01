@@ -1,16 +1,20 @@
 {% extends 'website/base.html' %}
-{% block title %}Inicio{% endblock%}
+{% block title %}Noticia{% endblock%}
 
-{% block head_css %}
+{% block head_css_inf %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/flexslider/flexslider.css">
 {% endblock %}
 
-{% block section_contenido %}
+{% block header2 %}{% endblock %}
+
+
+{% block section_inf %}
 
 <section id="contenido-noticia" class="conten1 clearfix">
 	<h1>{{noticia.titulo|title}}</h1>
-	<h4>{{ noticia.fecha|date:'SHORT_DATETIME_FORMAT'}}</h4>
-	<img src="{{MEDIA_URL}}{{noticia.imagen}}">
-	<p>{{noticia.contenido}}</p>
+	<h6>Publicado el {{ noticia.fecha|date:'SHORT_DATETIME_FORMAT'}}</h6>
+	<img src="{{noticia.imagen.url_500x218}}">
+	<p>{{noticia.contenido|linebreaks}}</p>
 </section>
 
 {% endblock %}

@@ -1,9 +1,16 @@
 @import "help"
 
-#header-nosotros
+#fondo-sup
+#fondo-inf
+	background none !important
+	border-bottom none
+	box-shadow(none)
+	filter unquote(none)
+#wrapper2
+	margin-top 0	
+#section-inf
 	background-color rgb(223,223,221)
-	.banner
-		background-color #E0D29C
+	borderRadius(0 0 15px 15px)
 	
 #cuerpo2
 	position relative
@@ -33,17 +40,20 @@
 			margin 0
 			font-size 1em
 
-	#footer2
-		padding 20px
-		>a
-			display inline-block
-		img
-			max-width 276px
-			width 100%
-			height auto\\9
-		#aside-quienes
-			flotarDer()
-			margin-top 10px
+#footer2
+	padding 20px
+	>a
+		display inline-block
+	img
+		max-width 276px
+		width 100%
+		height auto\\9
+	#aside-quienes
+		flotarDer()
+		margin-top 10px
+		ul
+			li
+				display inline-block
 
  @media screen and (max-width:650px)	
 	#cuerpo2

@@ -1,0 +1,89 @@
+@import "help"
+
+#fondo-sup
+#fondo-inf
+	background none !important
+	border-bottom none
+	box-shadow(none)
+	filter unquote(none)
+#wrapper2
+	margin-top 0	
+#section-inf
+	background-color rgb(223,223,221)
+	borderRadius(0 0 15px 15px)
+
+.header2
+	.banner
+		div
+			background rgb(137,25,30)
+	h1
+		position relative !important
+		font-size 4em !important
+		font-family 'miller', Georgia,Serif
+		font-weight normal
+		color white
+		line-height 1em
+		span
+			padding-left 15%
+
+#cuerpo2
+	position relative
+	padding 20px
+	#ministerios
+	article
+		position relative
+		flotarIz()
+	#ministerios	
+		width 29%
+		h3
+			margin 0 0 15px -20px
+			padding-left 20px
+			background rgb(225,210,156)
+			font-size 14px
+		    font-family 'miller', Georgia,Serif
+		div
+			padding 5% 0 4% 0
+			background rgb(31,16,0)
+			margin-bottom 5px
+			img
+				max-width 100% 
+				width auto \\9
+				height auto
+	>article
+		width 70%
+		text-align justify	
+		p
+			padding-left 15px
+
+#footer2
+	padding 20px
+	>a
+		display inline-block
+	img
+		max-width 276px
+		width 100%
+		height auto\\9
+	#aside-quienes
+		flotarDer()
+		margin-top 10px
+		ul
+			li
+				display inline-block
+
+@media screen and (max-width:650px)	
+	.header2
+		h1
+			font-size 2em !important
+	#cuerpo2
+		>article
+			width 100%
+			border-right none
+			p
+				padding-right 0
+		#ministerios
+			width 100%
+			text-align center
+			div
+				width 100px
+				display inline-block
+				borderRadius(15px)

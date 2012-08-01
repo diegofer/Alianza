@@ -5,15 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/nosotros.css?101">
 {% endblock %}
 
+{% block header2 %}
+	{{ block.super }}
+{% endblock header2 %}
+
+
 {% block section_sup %}
-<section id="header-nosotros" class="header2 clearfix">
-	<div class="banner clearfix">
-		<div>
-			<img src="{{STATIC_URL}}img/reloj1.jpg">
-			<h1>CUANDO TODO EMPEZO</h1>
-		</div>		
-	</div>
-</section>
 
 {% endblock %}
 
@@ -57,19 +54,20 @@
 
 	</section>
 	
-	<div id="footer2" class="clearfix">
-		<a href="#">
-			<img src="{{STATIC_URL}}img/logo2.png">
-		</a>
-		<aside id="aside-quienes">
-			<ul id="redes">
-				<li><a href="http://www.facebook.com/pages/alianza-cristiana-y-misionera-colombiana/146113898826256"></a></li>
-				<li><a href="http://twitter.com"></a></li>
-				<li><a href="http://www.youtube.com/user/NEWKOKO712?feature=watch"></a></li>
-			</ul>
-		</aside>	
-	</div>
+	
 </section>
+<div id="footer2" class="clearfix">
+	<a href="#">
+		<img src="{{STATIC_URL}}img/logo2.png">
+	</a>
+	<aside id="aside-quienes">
+		<ul id="redes">
+			<li><a href="http://www.facebook.com/pages/IGLESIA-ALIANZA-CRISTIANA-MISIONERA-COLOMBIANA/251951971521832" target="_blank"></a></li>
+			<li><a href="http://twitter.com" target="_blank"></a></li>
+			<li><a href="http://www.youtube.com/channel/UClxDhbzp8VgAs79rCFE3O7w/feed" target="_blank"></a></li>
+		</ul>
+	</aside>	
+</div>
 {% endblock %}
 
 
