@@ -7,7 +7,7 @@
 	<meta name="robots" content="noindex,nofollow,noarchive,noodp,nosnippet">
 	<link rel="shortcut icon" href="{{STATIC_URL}}img/favicon.png" type="image/png">
 	{% block head_css_sup %}{% endblock %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?103">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?105">
 	{% block head_css_inf %}{% endblock %}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -93,8 +93,24 @@
 
 	<div id="fondo-inf" class="clearfix">
 		<div id="wrapper2">
-			<section id="section-inf">
-				{% block section_inf %}{% endblock %}	
+			<section id="section-inf" class="clearfix">
+
+				{% block section_inf %}{% endblock %}
+
+				{% block footer2 %}
+				<div id="footer2" class="clearfix">
+					<a href="#">
+						<img src="{{STATIC_URL}}img/logo2.png">
+					</a>
+					<aside id="aside-quienes">
+						<ul id="redes">
+							<li><a href="http://www.facebook.com/pages/IGLESIA-ALIANZA-CRISTIANA-MISIONERA-COLOMBIANA/251951971521832" target="_blank"></a></li>
+							<li><a href="http://twitter.com" target="_blank"></a></li>
+							<li><a href="http://www.youtube.com/channel/UClxDhbzp8VgAs79rCFE3O7w/feed" target="_blank"></a></li>
+						</ul>
+					</aside>	
+				</div>	
+				{% endblock footer2 %}
 			</section>
 			
 			<footer>

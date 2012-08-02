@@ -2,7 +2,7 @@
 {% block title %}Inicio{% endblock%}
 
 {% block head_css_inf %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/nosotros.css?101">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/nosotros.css?103">
 {% endblock %}
 
 {% block header2 %}
@@ -10,9 +10,6 @@
 {% endblock header2 %}
 
 
-{% block section_sup %}
-
-{% endblock %}
 
 {% block section_inf %}
 
@@ -53,21 +50,13 @@
   		</article>
 
 	</section>
-	
-	
+		
 </section>
-<div id="footer2" class="clearfix">
-	<a href="#">
-		<img src="{{STATIC_URL}}img/logo2.png">
-	</a>
-	<aside id="aside-quienes">
-		<ul id="redes">
-			<li><a href="http://www.facebook.com/pages/IGLESIA-ALIANZA-CRISTIANA-MISIONERA-COLOMBIANA/251951971521832" target="_blank"></a></li>
-			<li><a href="http://twitter.com" target="_blank"></a></li>
-			<li><a href="http://www.youtube.com/channel/UClxDhbzp8VgAs79rCFE3O7w/feed" target="_blank"></a></li>
-		</ul>
-	</aside>	
-</div>
+
+{% endblock section_inf %}
+
+{% block footer2 %}
+	{{ block.super }}
 {% endblock %}
 
 

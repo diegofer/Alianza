@@ -1,0 +1,20 @@
+#fondo-sup,#fondo-inf{background:none !important;border-bottom:none;-webkit-box-shadow:none;-moz-box-shadow:none;-ms-box-shadow:none;-o-box-shadow:none;box-shadow:none;filter:none}
+#wrapper2{margin-top:0}
+#section-inf{background-color:#dfdfdd;-webkit-border-radius:0 0 15px 15px;-moz-border-radius:0 0 15px 15px;-ms-border-radius:0 0 15px 15px;-o-border-radius:0 0 15px 15px;border-radius:0 0 15px 15px;position:relative}
+.header2 .banner div{background:#8a191e}
+.header2 h1{position:relative !important;font-size:4em !important;font-family:'miller',Georgia,Serif;font-weight:normal;color:#fff;line-height:1em;}
+.header2 h1 span{padding-left:30%}
+#content-form{max-width:700px;width:90%;min-width:250px;border-left:solid 3px #e1d39d;margin:30px auto;padding-left:7%;}
+#content-form p span{display:block;text-align:right;padding-right:20px}
+#form-peticion{max-width:460px;width:93%;min-width:250px;}
+#form-peticion .control-group{margin-bottom:7px;}
+#form-peticion .control-group .control-label,#form-peticion .control-group .controls{display:inline-block;vertical-align:top}
+#form-peticion .control-group .control-label{width:20%;min-width:80px}
+#form-peticion .control-group .controls{width:78%;min-width:270px;}
+#form-peticion .control-group .controls .textinput{width:100%}
+#form-peticion .control-group .controls span{display:block;background:#fff;color:#8a191e;font-size:12px;float:right;margin-top:-2px;padding:2px 5px;border-bottom:solid #999 1px;border-left:solid #999 1px;border-right:solid #999 1px}
+#form-peticion #div_id_peticion .controls{width:98% !important;}
+#form-peticion #div_id_peticion .controls .textarea{width:100%}
+#form-peticion .form-actions{text-align:right}
+@media screen and (max-width:650px){.header2 h1{font-size:2em !important}
+}

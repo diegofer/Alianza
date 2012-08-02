@@ -3,20 +3,24 @@
 
 {% block title %}Oramos por tí{% endblock%}
 
-{% block head_css %}
+{% block head_css_inf %}
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/peticiones.css">
 {% endblock %}
 
-{% block section_contenido %}
-	<section id="peticiones" class="conten1 clearfix">
-		<div id="header2" class="clearfix">
-			<div>
-				<img src="{{STATIC_URL}}img/reloj1.jpg">
-				<h1>Peticiones de Oración</h1>
-			</div>	
-		</div>
-		<section id="cuerpo2" class="clearfix">		
-			{% crispy form %}
-		</section>
-	</section>
+{% block header2 %}
+	{{ block.super }}
+{% endblock header2 %}
+
+{% block section_inf %}
+<section id="content-form" class="clearfix">
+	<p>Y esta es la confianza que tenemos en El, que si pedimos alguna cosa conforme
+	a su voluntad, El nos oye.<br/><span><strong>1ª Juan 5:14</strong></span>
+	</p>
+		
+	{% crispy form %}
+</section>
+
+{% endblock section_inf %}
+
+{% block footer2 %}
 {% endblock %}

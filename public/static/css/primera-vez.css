@@ -12,11 +12,6 @@
 #cuerpo2 #ministerios div img{max-width:100%;width:auto \ 9;height:auto}
 #cuerpo2 >article{width:70%;text-align:justify;}
 #cuerpo2 >article p{padding-left:15px}
-#footer2{padding:20px;}
-#footer2 >a{display:inline-block}
-#footer2 img{max-width:276px;width:100%;height:auto \ 9}
-#footer2 #aside-quienes{float:right;margin-top:10px;}
-#footer2 #aside-quienes ul li{display:inline-block}
 @media screen and (max-width:650px){.header2 h1{font-size:2em !important}
 #cuerpo2 >article{width:100%;border-right:none;}
 #cuerpo2 >article p{padding-right:0}

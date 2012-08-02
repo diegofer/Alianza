@@ -1,7 +1,7 @@
 #encoding:utf-8
 from django import forms
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
+from crispy_forms.layout import Submit, Reset
 
 class PeticionesForm(forms.Form):
 	nombre = forms.CharField(
@@ -26,10 +26,11 @@ class PeticionesForm(forms.Form):
 
 	def __init__(self, *args, **kwargs):
 		self.helper = FormHelper()
-		self.helper.form_id = 'form-peticiones'
-		self.helper.form_class = 'blueForms'
+		self.helper.form_id = 'form-peticion'
+		self.helper.form_class = 'uniForm'
 		self.helper.form_method = 'post'
 		#self.helper.form_action = '/peticiones'
 
-		self.helper.add_input(Submit('submit', 'Submit'))
+		self.helper.add_input(Submit('submit', 'Enviar'))
+		self.helper.add_input(Reset('reset', 'Borrar'))
 		super(PeticionesForm, self).__init__(*args, **kwargs)

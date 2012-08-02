@@ -1,0 +1,83 @@
+@import "help"
+
+#fondo-sup
+#fondo-inf
+	background none !important
+	border-bottom none
+	box-shadow(none)
+	filter unquote(none)
+#wrapper2
+	margin-top 0	
+#section-inf
+	background-color rgb(223,223,221)
+	borderRadius(0 0 15px 15px)
+	position relative
+
+.header2
+	.banner
+		div
+			background rgb(138,25,30)
+	h1
+		position relative !important
+		font-size 4em !important
+		font-family 'miller', Georgia,Serif
+		font-weight normal
+		color white
+		line-height 1em
+		span
+			padding-left 30%
+
+#content-form
+	max-width 700px
+	width 90%
+	min-width 250px
+	border-left solid 3px rgb(225,211,157)
+	margin 30px auto
+	padding-left 7%
+	p 
+		span
+			display block
+			text-align right
+			padding-right 20px
+
+#form-peticion
+	max-width 460px
+	width 93%
+	min-width 250px
+	.control-group
+		margin-bottom 7px
+		.control-label
+		.controls
+			display inline-block
+			vertical-align top
+		.control-label
+			width 20%
+			min-width 80px
+		.controls
+			width 78%
+			min-width 270px
+			.textinput
+				width 100%
+			span
+				display block
+				background #fff
+				color rgb(138,25,30)
+				font-size 12px
+				flotarDer()
+				margin-top -2px
+				padding 2px 5px
+				border-bottom solid #999999 1px
+				border-left solid #999999 1px
+				border-right solid #999999 1px
+	#div_id_peticion
+		.controls
+			width 98% !important
+			.textarea
+				width 100%
+	.form-actions
+		text-align right
+
+@media screen and (max-width:650px)	
+	.header2
+		h1
+			font-size 2em !important

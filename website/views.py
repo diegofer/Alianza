@@ -31,6 +31,7 @@ def detalle_noticia(request, noticia_slug):
 	return render_to_response('website/noticia.html', {'noticia':dato}, context_instance=RequestContext(request))
 
 def peticiones(request):
+	titulo = 'Peticiones de<br/> <span>Oración</span>'
  	form = PeticionesForm(request.POST or None)
  	if form.is_valid():
  		titulo = 'Petición de oración desde web Alianza'
@@ -41,5 +42,5 @@ def peticiones(request):
  		correo = EmailMessage(titulo, content, to=['diegofernando83@gmail.com'])
  		correo.send()
  		return HttpResponseRedirect('/peticiones')
- 	return render_to_response('website/peticiones.html', {'form':form}, context_instance=RequestContext(request))
+ 	return render_to_response('website/peticiones.html', {'form':form, 'titulo':titulo}, context_instance=RequestContext(request))
 
