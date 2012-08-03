@@ -7,7 +7,7 @@
 	<meta name="robots" content="noindex,nofollow,noarchive,noodp,nosnippet">
 	<link rel="shortcut icon" href="{{STATIC_URL}}img/favicon.png" type="image/png">
 	{% block head_css_sup %}{% endblock %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?105">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?106">
 	{% block head_css_inf %}{% endblock %}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -99,9 +99,11 @@
 
 				{% block footer2 %}
 				<div id="footer2" class="clearfix">
+					{% if titulo == 'CUANDO TODO EMPEZO' %}
 					<a href="#">
-						<img src="{{STATIC_URL}}img/logo2.png">
+						<img src="{{STATIC_URL}}img/logo-imagen-corp.png">
 					</a>
+					{% else %}{% endif %}
 					<aside id="aside-quienes">
 						<ul id="redes">
 							<li><a href="http://www.facebook.com/pages/IGLESIA-ALIANZA-CRISTIANA-MISIONERA-COLOMBIANA/251951971521832" target="_blank"></a></li>
