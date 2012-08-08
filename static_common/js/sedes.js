@@ -47,6 +47,7 @@ function setAutoComplete()
         } else {
             mapa.setZoom(16);  // Why 16? Because it looks good.
         }
+        mapa.setCenter(place.geometry.location);
     }
 
 function getData()

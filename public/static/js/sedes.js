@@ -47,6 +47,7 @@ function setAutoComplete()
         } else {
             mapa.setZoom(16);  // Why 16? Because it looks good.
         }
+        mapa.setCenter(place.geometry.location);
     }
 
 function getData()
@@ -92,7 +93,7 @@ function setMarkerts(sede)
        html += '<b>Dirección: </b>'+sede.direccion+'<br/>'; 
     }
     if(sede.web){
-       html += '<a href="'+sede.web+'">Más información</a>'; 
+       html += '<a href="'+sede.web+'" target="_blank">Más información</a>'; 
     }
     
 
