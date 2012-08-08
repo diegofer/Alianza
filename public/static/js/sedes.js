@@ -81,7 +81,6 @@ function setMarkerts(sede)
         position: latlng
         , map: mapa
         , title: sede.alias+' / '+sede.address
-        , icon: 'http://gmaps-samples.googlecode.com/svn/trunk/markers/red/marker1.png'
     });
 
     var html = '<h3>Iglesia Alianza Cristiana - '+sede.codigo+'</h3>';
@@ -92,8 +91,11 @@ function setMarkerts(sede)
     if(sede.direccion){
        html += '<b>Dirección: </b>'+sede.direccion+'<br/>'; 
     }
+    if(sede.tel){
+       html += '<b>Contacto: </b>'+sede.tel+'<br/>'; 
+    }
     if(sede.web){
-       html += '<a href="'+sede.web+'" target="_blank">Más información</a>'; 
+       html += '<b>Sitio web: </b><a href="'+sede.web+'" target="_blank">'+sede.web+'</a>'; 
     }
     
 
