@@ -79,7 +79,7 @@ function setMarkerts(sede)
     var marker = new google.maps.Marker({
         position: latlng
         , map: mapa
-        , title: sede.alias
+        , title: sede.alias+' / '+sede.address
         , icon: 'http://gmaps-samples.googlecode.com/svn/trunk/markers/red/marker1.png'
     });
 
