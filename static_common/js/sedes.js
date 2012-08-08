@@ -92,7 +92,7 @@ function setMarkerts(sede)
        html += '<b>Dirección: </b>'+sede.direccion+'<br/>'; 
     }
     if(sede.web){
-       html += '<a href="'+sede.web+'">Más información</a>'; 
+       html += '<a href="'+sede.web+'" target="_blank">Más información</a>'; 
     }
     
 
