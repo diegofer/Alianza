@@ -1,0 +1,9 @@
+#fondo-sup,#fondo-inf{background:none !important;border-bottom:none;-webkit-box-shadow:none;-moz-box-shadow:none;-ms-box-shadow:none;-o-box-shadow:none;box-shadow:none;filter:none}
+#wrapper2{margin-top:0}
+#section-inf{background-color:#dfdfdd;-webkit-border-radius:0 0 15px 15px;-moz-border-radius:0 0 15px 15px;-ms-border-radius:0 0 15px 15px;-o-border-radius:0 0 15px 15px;border-radius:0 0 15px 15px;position:relative}
+.header2 .banner div{background:#8a191e}
+.header2 h1{position:relative !important;font-size:4em !important;font-family:'miller',Georgia,Serif;font-weight:normal;color:#fff;line-height:1em;}
+.header2 h1 span{padding-left:30%}
+#cuerpo-sedes{position:relative;width:95%;margin:auto;font-size:12px;}
+#cuerpo-sedes #input_search{font-size:14px}
+#cuerpo-sedes #mapa{height:700px;width:100%;border:solid #000 2px;margin:20px auto}

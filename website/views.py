@@ -3,15 +3,23 @@
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 from django.http import HttpResponse, HttpResponseRedirect
-
-from website.models import  Noticia, Youtube
-from website.forms import PeticionesForm
+from django.forms.models import model_to_dict
 from django.core.mail import EmailMessage
+from django.core import serializers
+from django.views.decorators.csrf import ensure_csrf_cookie
+from django.utils import simplejson
+
+
+from website.models import  Noticia, Youtube, Iglesia
+from website.forms import PeticionesForm
+
+
+
 
 def home(request):
-	noticias = Noticia.objects.all().order_by('-fecha').filter(activado=True)[0:5]
+	noticias = Noticia.objects.all().order_by('-fecha').filter(activado=True)[1:5]
 	try:
-		video = Youtube.objects.all().order_by('-fecha').filter(activado=True)[0]
+		video = Youtube.objects.all().filter(activado=True).order_by('-fecha')[0]
 	except Youtube.DoesNotExist:
 		video = None
 	
@@ -20,6 +28,15 @@ def home(request):
 def primera_vez(request):
 	titulo = '¿Primera vez<br/> <span>en este sitio?</span>'
 	return render_to_response('website/primera-vez.html', {'titulo':titulo}, context_instance=RequestContext(request))
+
+@ensure_csrf_cookie
+def sedes(request):
+	titulo = 'La Alianza<br/> <span>en Colombia</span>'
+	if request.is_ajax():
+		q     = Iglesia.objects.all()
+		sedes = serializers.serialize("json", q)
+		return HttpResponse(sedes, mimetype='application/json') 
+	return render_to_response('website/sedes.html', {'titulo':titulo}, context_instance=RequestContext(request))
 
 def nosotros(request):
 	imag = 'reloj1.jpg'

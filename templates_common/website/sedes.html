@@ -1,0 +1,23 @@
+{% extends 'website/base.html' %}
+{% block title %}La Alianza en Colombia{% endblock%}
+
+{% block head_css_inf %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/sedes.css?101">
+{% endblock %}
+
+{% block head_script %}
+
+{% endblock %}
+
+{% block section_inf %}
+<section id="cuerpo-sedes" class="clearfix">
+	<input id="input_search"  type="text" size="50">
+	<label>Busque por departamentos, municipios, ciudades, pueblos y corregimientos etc.</label>
+	<div id="mapa"></div>
+</section>
+{% endblock %}
+
+{% block bootom_script %}
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;sensor=false&amp;language=es"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/sedes.js"></script>
+{% endblock %}

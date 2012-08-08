@@ -1,6 +1,9 @@
 #encoding:utf-8
 from django.db import models
 from thumbs import ImageWithThumbsField
+from django_google_maps.fields import AddressField, GeoLocationField
+
+#from django.utils.translation import ugettext as _
 
 class Noticia(models.Model):
 	titulo    = models.CharField(max_length=150, unique=True)
@@ -22,3 +25,16 @@ class Youtube(models.Model):
 
 	def __unicode__(self):
 		return self.titulo
+
+class Iglesia(models.Model):
+	alias       = models.CharField(max_length=100, help_text='Slogan de la iglesia o Barrio, sector o corregimiento')
+	pastor      = models.CharField(max_length=100, blank=True, help_text='Pastor director principal')
+	tel         = models.CharField(max_length=100, blank=True, help_text='Puede introducir varios números de contacto')
+	direccion   = models.CharField(max_length=100, blank=True, help_text='ej. calle 7 # 11-46')
+	codigo      = models.IntegerField(max_length=4)
+	web         = models.CharField(max_length=200, blank=True, help_text='Página web propia o de facebook u otra similar')
+	address     = AddressField(max_length=100)
+	geolocation = GeoLocationField(blank=True)
+	
+	def __unicode__(self):
+		return '%s sede %s' % (self.address, self.alias)

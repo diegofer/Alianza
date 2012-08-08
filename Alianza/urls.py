@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     url(r'^noticias/(?P<noticia_slug>.+?)/?$', 'website.views.detalle_noticia'),
     url(r'^primera-vez/$', 'website.views.primera_vez'), 
     url(r'^peticiones/$', 'website.views.peticiones'),
+    url(r'^sedes/$', 'website.views.sedes'),
     url(r'^update/?$', 'github.views.update'),
 
     #url(r'^estadistica/$', 'estadistica.views.shell'),
