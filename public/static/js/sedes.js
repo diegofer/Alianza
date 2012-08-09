@@ -57,7 +57,8 @@ function getData()
        url:"/sedes/",
        dataType : 'json',
        success: respuesta,
-       error: alError
+       error: alError,
+       cache : false
     });
 }
 
