@@ -1,0 +1,80 @@
+@import "help"
+
+#fondo-sup
+#fondo-inf
+	background none !important
+	border-bottom none
+	box-shadow(none)
+	filter unquote(none)
+#wrapper2
+	margin-top 0	
+#section-inf
+	background-color rgb(223,223,221)
+	borderRadius(0 0 15px 15px)
+
+.header2
+	.banner
+		div
+			background rgb(137,25,30)
+	h1
+		position relative !important
+		font-size 4em !important
+		font-family 'miller', Georgia,Serif
+		font-weight normal
+		color white
+		line-height 1em
+		padding-left 5% !important
+		span
+			//padding-left 15%
+			font-family 'MacBook', Georgia,Serif
+
+#cuerpo2
+	position relative
+	padding 20px
+	text-align justify
+	h3 
+		text-align left
+		font-family "Times New Roman", Georgia,Serif
+	#articulo1
+		div
+			padding-left 2%
+			width 300px
+			flotarDer()
+			margin-bottom 15px
+			img
+				display block
+				margin auto
+				max-width 290px
+				width 90%
+				border solid white 5px
+				transform(rotate(3deg))
+				box-shadow(10px 10px 7px #222222)
+	#articulo2
+	#articulo3
+	#articulo4
+		display inline-block
+		vertical-align top
+		width 50%
+	#articulo2
+	#articulo4
+		p
+			padding-right 15px
+	#articulo3
+		h3
+		p
+			padding-left 15px
+
+
+@media screen and (max-width:650px)	
+	#cuerpo2
+		#articulo1
+			div
+				width 100%
+		#articulo2
+		#articulo3
+		#articulo4
+			width 100%
+			h3
+			p
+				padding 0 
+

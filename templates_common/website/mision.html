@@ -1,0 +1,38 @@
+{% extends 'website/base.html' %}
+{% block title %}Nuestra Misión{% endblock%}
+
+{% block head_css_inf %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/mision.css?101">
+{% endblock %}
+
+{% block header2 %}
+	{{ block.super }}
+{% endblock header2 %}
+
+
+{% block section_inf %}
+<section id="cuerpo2" class="clearfix">
+	<article id="articulo1" class="clearfix">
+		<div><img src="{{STATIC_URL}}img/grupo_thum.jpg"></div>
+		<h3>La Misión para el ministerio</h3>
+		<p>Somos una comunidad Cristiana comprometida con el Evangelio Cristo Céntrico de transformación integral, dedicada a  la evangelización, el discipulado y la formación de líderes;  fundamentada en los principios de la Palabra de Dios; estructurada, dinámica,  reflexiva,  transparente y abierta a los cambios sin perder su identidad; que realiza su gestión con hombres y mujeres capacitados y comprometidos con el mejoramiento continuo e integral de la Iglesia y de la comunidad en general.</p>		
+	</article>
+
+	<article id="articulo2">
+		<h3>Que es una Misión</h3>
+		<p>Cada uno tiene una misión. Es lo que da vida y propósito, lo que nos motiva a saltar de la cama cada mañana. En la Alianza  nuestra misión es cumplir la última voluntad de JESUS en la tierra - La Gran Comisión. También nos referimos a ella como la convocatoria. Somos gente de acción. Pero sabemos que completar nuestra misión con éxito requiere una saludable mezcla de "ser" y "hacer".</p>
+	</article><!--
+
+	--><article id="articulo3">
+		<h3>Ser</h3>
+		<p>Sentado a los pies de Jesús, dedicarnos a la oración y la inmersión en su Palabra que nos transforma radicalmente. También aumenta nuestra hambre de profundizar en nuestra relación con el, que le conozcamos como nuestro Salvador , Santificador , Sanador , y Rey que viene.</p>
+	</article>
+
+	<article id="articulo4">
+		<h3>Hacer</h3>
+		<p>Motivados por nuestro amor a Jesús, nos deleitamos en servirle. La Alianza y sus Ministerios son la expresión de nuestro servicio a Jesús, el medio por el que se busca para completar la Gran Comisión.</p>
+	</article>
+
+</section>
+{% endblock section_inf %}
+

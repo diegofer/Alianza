@@ -8,6 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', 'website.views.home'),
     url(r'^nosotros/$', 'website.views.nosotros'),
+    url(r'^mision/$', 'website.views.mision'),
     url(r'^noticias/(?P<noticia_slug>.+?)/?$', 'website.views.detalle_noticia'),
     url(r'^primera-vez/$', 'website.views.primera_vez'), 
     url(r'^peticiones/$', 'website.views.peticiones'),
