@@ -1,0 +1,86 @@
+@import "help"
+
+#fondo-sup
+#fondo-inf
+	background none !important
+	border-bottom none
+	box-shadow(none)
+	filter unquote(none)
+#wrapper2
+	margin-top 0	
+#section-inf
+	background-color rgb(223,223,221)
+	borderRadius(0 0 15px 15px)
+
+.header2
+	.banner
+		div
+			background rgb(137,25,30)
+	h1
+		position relative !important
+		font-size 4em !important
+		font-family 'miller', Georgia,Serif
+		font-weight normal
+		color white
+		line-height 1em
+		padding-left 5% !important
+		span
+			//padding-left 15%
+			font-family 'MacBook', Georgia,Serif
+		.mediana
+			font-size 35px !important
+
+#cuerpo2
+	position relative
+	padding 20px
+	text-align justify
+	h3 
+		text-align left
+		font-family "Times New Roman", Georgia,Serif
+		font-size 1.5em
+	h4
+		font-family 'miller', Georgia,Serif
+		margin-bottom 5px
+		img
+			display block
+			width 100%
+			height 2px
+		span
+			font-size 10px
+	article
+		flotarIz()
+		width 68%
+	#aside
+		flotarDer()
+		width 27%
+		border-left solid rgb(216,203,151) 3px
+		padding-left 3%
+		text-align left
+		h3
+			font-size 1.2em
+			font-weight normal
+			font-style italic
+			color white
+			borderRadius(5px)
+			gradientLinear( top, rgb(34,51,71), 0%, rgb(22,42,62), 50% )
+			padding 2px 5px
+		p
+			margin-top 0
+			font-size 14px
+	.fondo-abano
+		background rgb(225,211,157)
+		borderRadius(10px)
+		padding 5px 10px
+
+@media screen and (max-width:650px)
+	.header2
+		h1
+			font-size 2em !important	
+			.mediana
+				font-size 20px !important
+	#cuerpo2
+		article 
+			width 100%
+		#aside
+			width 97% 
+			

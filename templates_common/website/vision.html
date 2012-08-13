@@ -1,0 +1,53 @@
+{% extends 'website/base.html' %}
+{% block title %}Nuestra Visión{% endblock%}
+
+{% block head_css_inf %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/vision.css?101">
+{% endblock %}
+
+{% block header2 %}
+	{{ block.super }}
+{% endblock header2 %}
+
+
+{% block section_inf %}
+<section id="cuerpo2" class="clearfix">
+
+	{% block contenido_cuerpo2 %}
+	<article>
+		<h3>La visión para el ministerio</h3>
+		<p>Para el 2015 la IAC&MC se proyecta como una Iglesia saludable a nivel espiritual y emocional; consolidada en lo ministerial y  administrativo, desarrollando procesos orientados al mejoramiento continuo, por medio de la implementación de herramientas de gestión aplicadas a todos los niveles; con personal idóneo, capacitado, competente y comprometido en el logro de los objetivos,  que satisfaga las expectativas de crecimiento integral de la Iglesia y la comunidad, como resultado de la gestión evangelistica, ministerial, administrativa y social.</p>		
+
+		<h3>¿Por qué ir?</h3>
+		<p>A causa de nuestro amor por Jesús, el Salvador , Santificador , Sanador y Rey que viene . Él lo dio todo por nosotros, como aquellos que llevan su luz , nos vemos obligados a brillar donde quiera que vamos.</p>
+
+		<p>El Evangelio Cuádruple -que está en nuestro ADN y es la base de nuestro deseo de vivir la "vida más profunda", un compromiso con una relación cada vez mayor, cumpliendo con Jesús que nos impulsa a completar su último mandato en su tierra de la Gran Comisión (Mateo 28 : 18b-20a).</p>
+	</article>
+	{% endblock contenido_cuerpo2 %}
+
+	<article id="aside">
+		<h3>Conoce más de la Alianza...</h3>
+
+		<h4>¿En qué Creemos?<img src="{{STATIC_URL}}img/linea.jpg"></h4>
+		<p>Nuestra Doctrina está contenida en los siguientes postulados de fe. <a href="/vision/creemos">Ver mas...</a></p>
+
+		<h4>Nuestros Simbolos<img src="{{STATIC_URL}}img/linea.jpg"></h4>
+		<p>Es una ALIANZA fraternal de cristianos. Nos une la libertad espiritual. <a href="/vision">Ver mas...</a></p>
+
+		<h4>Nuestras Fundaciones<img src="{{STATIC_URL}}img/linea.jpg"></h4>
+		<p>El Colegio Jorge Isaacs, el Seminario Biblico, Ebenezer son algunas de nuestras fundaciones. <a href="/vision">Ver mas...</a></p>
+
+		<h4>Objetivos Estratégicos<img src="{{STATIC_URL}}img/linea.jpg"></h4>
+		<p>Conoce nuestros Objetivos Estrategicos. <a href="/vision">Ver mas...</a></p>
+
+		<h4>E.F.I.<span>(escuela de Formación Integral)</span><img src="{{STATIC_URL}}img/linea.jpg"></h4>
+		<p>La E.F.I hace parte del seminario el cual reconoce los dos primeros semestres. <a href="/vision">Ver mas...</a></p>
+
+		<h4>Logros e Indicadores de Logro<img src="{{STATIC_URL}}img/linea.jpg"></h4>
+		<p>Conoce mas de nuestros ministerios a través de esta información. <a href="/vision">Ver mas...</a></p>
+		
+
+	</article>
+
+</section>
+{% endblock section_inf %}

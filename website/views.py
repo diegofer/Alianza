@@ -43,6 +43,14 @@ def nosotros(request):
 	titulo = 'CUANDO TODO EMPEZO'
 	return render_to_response('website/nosotros.html',{'imag':imag, 'titulo':titulo}, context_instance=RequestContext(request))
 
+def vision(request):
+	titulo = 'Nuestra<br/> <span>Visión</span>'
+	return render_to_response('website/vision.html',{'titulo':titulo}, context_instance=RequestContext(request))
+
+def creemos(request):
+	titulo = 'Conoce más<br/> <span class="mediana">de la Alianza...</span>'
+	return render_to_response('website/creemos.html',{'titulo':titulo}, context_instance=RequestContext(request))
+
 def mision(request):
 	titulo = 'Nuestra<br/> <span>Misión</span>'
 	return render_to_response('website/mision.html',{'titulo':titulo}, context_instance=RequestContext(request))

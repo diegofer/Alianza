@@ -2,7 +2,6 @@ $(document).ready(inicio);
 
 var mapa;
 var autocomplete;
-var popup;
 var infoWindow;
 
 function inicio()
@@ -116,39 +115,6 @@ function alError(e)
     alert('Falló el servidor: '+e.error);
 }
 
-
-function crearMarcadores()
-{
-	var n = 1;
-	for(var i in place){
-        var marker = new google.maps.Marker({
-            position: 1
-            , map: mapa
-            , title: i
-            , icon: 'http://gmaps-samples.googlecode.com/svn/trunk/markers/red/marker' + n++ + '.png'
-        });
-    
-	    google.maps.event.addListener(marker, 'mouseover', function(){
-	    	if(!popup){
-                popup = new google.maps.InfoWindow();
-            }
-            var note = 'Iglesia: ' + this.title;
-            popup.setContent(note);
-            popup.open(mapa, this);
-	    });
-	}
-}
-
-
-
-function abrirVentana()
-{
-	var popup = new google.maps.InfoWindow({
-        content: 'Soy la ventana'
-    });
- 
-    popup.open(mapa, marker);
-}
 
 $(document).ajaxStart(function(){
     $('#spinner').show();
