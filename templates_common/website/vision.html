@@ -2,7 +2,7 @@
 {% block title %}Nuestra Visión{% endblock%}
 
 {% block head_css_inf %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/vision.css?101">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/vision.css?102">
 {% endblock %}
 
 {% block header2 %}
@@ -28,11 +28,11 @@
 	<article id="aside">
 		<h3>Conoce más de la Alianza...</h3>
 
-		<h4>¿En qué Creemos?<img src="{{STATIC_URL}}img/linea.jpg"></h4>
-		<p>Nuestra Doctrina está contenida en los siguientes postulados de fe. <a href="/vision/creemos">Ver mas...</a></p>
+		<a href="{% url website.views.creemos %}"><h4>¿En qué Creemos?<img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
+		<p>Nuestra Doctrina está contenida en los siguientes postulados de fe. <a href="{% url website.views.creemos %}">Ver mas...</a></p>
 
-		<h4>Nuestros Simbolos<img src="{{STATIC_URL}}img/linea.jpg"></h4>
-		<p>Es una ALIANZA fraternal de cristianos. Nos une la libertad espiritual. <a href="/vision">Ver mas...</a></p>
+		<a href="{% url website.views.simbolos %}"><h4>Nuestros Simbolos<img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
+		<p>Es una ALIANZA fraternal de cristianos. Nos une la libertad espiritual. <a href="{% url website.views.simbolos %}">Ver mas...</a></p>
 
 		<h4>Nuestras Fundaciones<img src="{{STATIC_URL}}img/linea.jpg"></h4>
 		<p>El Colegio Jorge Isaacs, el Seminario Biblico, Ebenezer son algunas de nuestras fundaciones. <a href="/vision">Ver mas...</a></p>

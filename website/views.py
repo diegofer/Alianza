@@ -51,6 +51,10 @@ def creemos(request):
 	titulo = 'Conoce más<br/> <span class="mediana">de la Alianza...</span>'
 	return render_to_response('website/creemos.html',{'titulo':titulo}, context_instance=RequestContext(request))
 
+def simbolos(request):
+	titulo = 'Conoce más<br/> <span class="mediana">de la Alianza...</span>'
+	return render_to_response('website/simbolos.html',{'titulo':titulo}, context_instance=RequestContext(request))
+
 def mision(request):
 	titulo = 'Nuestra<br/> <span>Misión</span>'
 	return render_to_response('website/mision.html',{'titulo':titulo}, context_instance=RequestContext(request))

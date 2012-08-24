@@ -64,13 +64,91 @@
 			borderRadius(5px)
 			gradientLinear( top, rgb(34,51,71), 0%, rgb(22,42,62), 50% )
 			padding 2px 5px
+		a
+			color black
+			font-weight bold
+			&:hover
+				color gray
 		p
 			margin-top 0
 			font-size 14px
 	.fondo-abano
+		position relative
 		background rgb(225,211,157)
 		borderRadius(10px)
 		padding 5px 10px
+
+
+
+	////// simbolos /////////
+	.textos
+		display none
+
+	.simbol
+		position absolute
+		background-image url(../img/simbolos.png)
+	.textos
+	#texto-intro
+		font-size 14px
+		padding 0 20px 0 200px
+		margin 50px 0 
+
+	#globo
+		width 150px
+		height 146px
+		background-position 0 0
+		top 60px
+		left 20px
+		z-index 1
+		&:hover ~ #texto-globo
+			display block !important
+		&:hover ~ #texto-intro
+			display none !important	
+	#cruz
+		width 52px
+		height 88px
+		background-position -150px 0 
+		top 73px
+		left 70px
+		z-index 2
+		&:hover ~ #texto-cruz
+			display block !important
+		&:hover ~ #texto-intro
+			display none !important
+	#jarro
+		width 53px
+		height 56px
+		background-position -210px 0 
+		top 110px
+		left 32px
+		z-index 3
+		&:hover ~ #texto-jarro
+			display block !important
+		&:hover ~ #texto-intro
+			display none !important
+	#copa
+		width 51px
+		height 54px
+		background-position -330px 0 
+		top 110px
+		left 105px
+		z-index 3
+		&:hover ~ #texto-copa
+			display block !important
+		&:hover ~ #texto-intro
+			display none !important
+	#corona
+		width 57px
+		height 46px
+		background-position -270px 0 
+		top 140px
+		left 67px
+		z-index 5
+		&:hover ~ #texto-corona
+			display block !important
+		&:hover ~ #texto-intro
+			display none !important
+
 
 @media screen and (max-width:650px)
 	.header2
