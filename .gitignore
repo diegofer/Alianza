@@ -1,4 +1,3 @@
-
 # Compiled source #
 ###################
 *.com
@@ -38,5 +37,5 @@ Thumbs.db
 
 # Settings files
 settings.py
-settings_local.py
 estadistica
+media
