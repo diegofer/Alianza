@@ -162,5 +162,9 @@ class ImageWithThumbsField(ImageField):
         self.sizes = sizes
         super(ImageField, self).__init__(**kwargs)
 
-from south.modelsinspector import add_introspection_rules
-add_introspection_rules([], ["^website\.thumbs\.ImageWithThumbsField"])
+from django.core import exceptions
+try:
+    from south.modelsinspector import add_introspection_rules
+    add_introspection_rules([], ["^website\.thumbs\.ImageWithThumbsField"])
+except ImportError:
+    pass
