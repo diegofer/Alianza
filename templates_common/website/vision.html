@@ -2,7 +2,7 @@
 {% block title %}Nuestra Visión{% endblock%}
 
 {% block head_css_inf %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/vision.css?102">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/vision.css?104">
 {% endblock %}
 
 {% block header2 %}
@@ -34,14 +34,14 @@
 		<a href="{% url website.views.simbolos %}"><h4>Nuestros Simbolos<img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
 		<p>Es una ALIANZA fraternal de cristianos. Nos une la libertad espiritual. <a href="{% url website.views.simbolos %}">Ver mas...</a></p>
 
-		<h4>Nuestras Fundaciones<img src="{{STATIC_URL}}img/linea.jpg"></h4>
-		<p>El Colegio Jorge Isaacs, el Seminario Biblico, Ebenezer son algunas de nuestras fundaciones. <a href="/vision">Ver mas...</a></p>
+		<a href="{% url website.views.fundaciones %}"><h4>Nuestras Fundaciones<img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
+		<p>El Colegio Jorge Isaacs, el Seminario Biblico, Ebenezer son algunas de nuestras fundaciones. <a href="{% url website.views.fundaciones %}">Ver mas...</a></p>
 
-		<h4>Objetivos Estratégicos<img src="{{STATIC_URL}}img/linea.jpg"></h4>
-		<p>Conoce nuestros Objetivos Estrategicos. <a href="/vision">Ver mas...</a></p>
+		<a href="{% url website.views.objetivos %}"><h4>Objetivos Estratégicos<img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
+		<p>Conoce nuestros Objetivos Estrategicos. <a href="{% url website.views.objetivos %}">Ver mas...</a></p>
 
-		<h4>E.F.I.<span>(escuela de Formación Integral)</span><img src="{{STATIC_URL}}img/linea.jpg"></h4>
-		<p>La E.F.I hace parte del seminario el cual reconoce los dos primeros semestres. <a href="/vision">Ver mas...</a></p>
+		<a href="{% url website.views.efi %}"><h4>E.F.I.<span>(escuela de Formación Integral)</span><img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
+		<p>La E.F.I hace parte del seminario el cual reconoce los dos primeros semestres. <a href="{% url website.views.efi %}">Ver mas...</a></p>
 
 		<h4>Logros e Indicadores de Logro<img src="{{STATIC_URL}}img/linea.jpg"></h4>
 		<p>Conoce mas de nuestros ministerios a través de esta información. <a href="/vision">Ver mas...</a></p>

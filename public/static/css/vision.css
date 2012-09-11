@@ -35,6 +35,10 @@
 #cuerpo2 #corona{width:57px;height:46px;background-position:-270px 0;top:140px;left:67px;z-index:5;}
 #cuerpo2 #corona:hover ~ #texto-corona{display:block !important}
 #cuerpo2 #corona:hover ~ #texto-intro{display:none !important}
+#cuerpo2 #fundaciones div{position:relative;font-size:14px;margin-bottom:20px;}
+#cuerpo2 #fundaciones div img{float:left;margin:0 10px 10px 0}
+#cuerpo2 #efi div ul{margin-bottom:40px;}
+#cuerpo2 #efi div ul h5{margin:10px 0 0 0}
 @media screen and (max-width:650px){.header2 h1{font-size:2em !important;}
 .header2 h1 .mediana{font-size:20px !important}
 #cuerpo2 article{width:100%}

@@ -7,7 +7,7 @@
 	<meta name="robots" content="noindex,nofollow,noarchive,noodp,nosnippet">
 	<link rel="shortcut icon" href="{{STATIC_URL}}img/favicon.png" type="image/png">
 	{% block head_css_sup %}{% endblock %}
-	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?107">
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/base.css?108">
 	{% block head_css_inf %}{% endblock %}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -42,23 +42,28 @@
 
 				<nav>
 					<ul id="menu">
-						<li><a href="/">INICIO</a></li>
+						<li>
+							<a href="/">INICIO</a>
+							<ul class="sub-menu">
+								<li><a href="{% url website.views.primera_vez %}">Primera vez?</a></li>
+								<li><a href="{% url website.views.peticiones %}">Oramos por ti</a></li>
+								<li><a href="{% url website.views.sedes %}">Nuestras sedes</a></li>
+							</ul>
+						</li>
 						<li>
 							<a href="/nosotros">QUIENES SOMOS</a>
 							<ul class="sub-menu">
 								<li><a href="/nosotros">Cuando todo empezó</a></li>
 								<li><a href="/vision">Visión</a></li>
 								<li><a href="/mision">Misión</a></li>
-								<li><a href="{% url website.views.simbolos %}">Símbolos</a></li>		
+								<li><a href="{% url website.views.simbolos %}">Símbolos</a></li>
+								<li><a href="{% url website.views.fundaciones %}">Fundaciones</a></li>
+								<li><a href="{% url website.views.objetivos %}">Objetivos Estratégicos</a></li>	
+								<li><a href="{% url website.views.efi %}">E.F.I.</a></li>	
 							</ul>
 						</li>
 						<li>
 							<a href="/">MINISTERIOS</a>
-							<ul class="sub-menu">
-								<li><a href="/">Red de Oración</a></li>
-								<li><a href="/">Misiones</a></li>
-								<li><a href="/">Jóvenes</a></li>
-							</ul>
 						</li>
 						<li><a href="/">NOTICIAS</a></li>
 						<li><a href="/">RECURSOS</a></li>
@@ -118,7 +123,13 @@
 			  
 				<ul>
 					<li>
-						<div><a href="/">INICIO</a><span></span></div>		
+						<div><a href="/">INICIO</a><span></span></div>	
+
+						<ul class="submenu-footer">
+							<li><a href="{% url website.views.primera_vez %}">Primera vez?</a></li>
+							<li><a href="{% url website.views.peticiones %}">Oramos por ti</a></li>
+							<li><a href="{% url website.views.sedes %}">Nuestras sedes</a></li>
+						</ul>	
 					</li>
 					<li>
 						<div><a href="/nosotros">QUIENES SOMOS</a><span></span></div>
@@ -127,7 +138,10 @@
 							<li><a href="/nosotros">Cuando todo empezó</a></li>
 							<li><a href="/vision">Visión</a></li>
 							<li><a href="/mision">Misión</a></li>
-							<li><a href="{% url website.views.simbolos %}">Símbolos</a></li>	
+							<li><a href="{% url website.views.simbolos %}">Símbolos</a></li>
+							<li><a href="{% url website.views.fundaciones %}">Fundaciones</a></li>	
+							<li><a href="{% url website.views.objetivos %}">Objetivos Estratégicos</a></li>
+							<li><a href="{% url website.views.efi %}">E.F.I.</a></li>
 						</ul>
 					</li>
 					<li>
