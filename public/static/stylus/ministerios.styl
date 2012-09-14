@@ -1,0 +1,123 @@
+@import "help"
+
+.header-ministerios
+	position relative
+	img
+		display block
+		position relative
+		max-width 1024px
+		width 100%
+		height auto\\9
+		z-index 5
+		&:hover + ul.menu-ministerios
+			display block
+			top 0 !important
+	ul.menu-ministerios
+		list-style none
+		position absolute
+		margin 0
+		padding 0
+		top 0
+		left -150px
+		width 150px
+		z-index 10
+		gradientLinear( top, #C0BEBD,  0%, #f2efef, 50% ) 
+		&:hover
+			display block !important
+		li
+			border-bottom 1px rgb(51,51,51) solid
+			a
+				display block
+				padding 5px
+				color black
+				font-size 13px
+				&:hover
+					background darkred
+					color white
+
+.conten-ministerios
+	background #e6e6e6
+	article
+		width 50%
+		flotarIz()
+		margin-bottom 20px
+		h3
+		p
+		#video
+			padding 0 20px 0 20px
+		p
+			text-align justify
+.tips-ministerios
+	background #e6e6e6
+	margin-top 20px
+	position relative
+	>div
+		margin 30px 0
+	article
+		position relative
+		width 32.5%
+		display inline-block
+		vertical-align top
+		min-width 250px
+		margin-bottom 10px
+		text-align left
+		&:nth-child(2)
+			margin 0 1% 10px 1% 
+		&:nth-child(1)
+			#video
+				background rgb(223,223,221) 
+				padding 6% 0
+				borderRadius(15px)
+		img
+			max-width 100%
+			width auto \\9
+			margin auto
+			display block
+		h4
+			background #333333
+			color white
+			font-family 'miller',Arial,Sans-serif
+			margin 0
+			padding 5px
+		.cinta
+			background gray
+			position absolute
+			bottom 0
+			width 98%
+			padding 1%
+			line-height 17px
+			filter unquote('alpha(opacity=70)')
+			opacity .70
+			a
+				font-size 13px
+				font-weight bold
+				color black
+				&:hover
+					color white
+		#relleno
+			height 10px
+			width 100%
+			background gray
+	p
+		strong
+			font-family 'miller',Arial,Sans-serif
+		padding-left 20px
+		font-weight bold
+		font-size 13px
+		margin-bottom 50px
+
+///////////////////// MEDIA QUERYS /////////////////////
+
+@media screen and (min-width:320px) and (max-width:1320px)
+	.header-ministerios	
+		ul.menu-ministerios
+			left 0
+			display none
+@media screen and (max-width:650px)
+	.conten-ministerios
+		article
+			width 100%
+
+
+
+

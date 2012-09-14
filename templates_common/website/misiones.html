@@ -1,0 +1,108 @@
+{% extends 'website/base.html' %}
+{% block title %}Misiones{% endblock%}
+{% block head_css_sup %}
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/ministerios.css">
+{% endblock %}
+
+{% block header2 %}{% endblock %}
+
+{% block section_sup %}
+<section class="header-ministerios">
+	<img src="{{STATIC_URL}}img/ministerios/frontal-misiones.jpg">
+	<ul class="menu-ministerios" >
+		<li><a href="{% url website.views.misiones %}">MINISTERIO<br>MISIONES ALIANZA</a></li>
+		<li><a href="#">MINISTERIO<br>RED DE ORACIÓN</a></li>
+		<li><a href="#">MINISTERIO<br>SEBAC</a></li>
+		<li><a href="#">MINISTERIO<br>RELACIONES Y PROYECTOS</a></li>
+		<li><a href="#">MINISTERIO<br>FEMENIL</a></li>
+		<li><a href="#">MINISTERIO<br>ALIANZA JOVEN</a></li>
+		<li><a href="#">MINISTERIO<br>EVANGELIZACIÓN</a></li>
+	</ul>
+</section>
+{% endblock section_sup %}
+
+{% block footer2 %}
+{% endblock %}
+
+{% block section_inf %}
+<aside id="aside-home">
+	<ul id="redes">
+		<li><a href="http://www.facebook.com/pages/IGLESIA-ALIANZA-CRISTIANA-MISIONERA-COLOMBIANA/251951971521832" target="_blank"></a></li>
+		<li><a href="http://twitter.com" target="_blank"></a></li>
+		<li><a href="http://www.youtube.com/channel/UClxDhbzp8VgAs79rCFE3O7w/feed" target="_blank"></a></li>
+	</ul>
+</aside>
+<section class="conten-ministerios clearfix">
+	<article>
+		<h3>¿QUÉ ES MISIONES ALIANZA?</h3>
+
+		<p>La iglesia alianza cristiana y misionera colombiana, es una denominación que busca ponerse al tenor con el momento histórico que está viviendo Colombia,  América latina y el mundo entero.</p>
+
+		<p>La realidad social, económica, política, tecnológica, espiritual y cultural que viven nuestros países, y como institución, nos demandan hacer ajustes en las maneras de hacer la tarea encargada por el señor Jesucristo de “mientras vais, haced discípulos en todos los grupos étnicos”, esta tarea implica los sitios geográficos, lo mismo que las culturas. Esta tarea no la podemos dejar de lado, nos implica y demanda repensar lo que estamos haciendo y las formas como lo hemos hecho hasta el momento. Ver mas...</p>
+
+		<p>Nos enfrentamos a un mundo cada vez más complejo y excluyente en todos los campos. Las instituciones o entidades religiosas también se enfrentan con una disyuntiva, se modernizan, reestructuran o quedan obsoletas y sin posibilidad de trascender en el tiempo y el espacio.</p>
+
+		<p>Buscando hacer un trabajo más efectivo y eficaz, hemos visto la necesidad de organizar el departamento de misiones, plantación de iglesias, acompañamiento pastoral y ministerial. Este departamento tiene la tarea de organizar, orientar, fortalecer, acompañar, direccionar las políticas instituciones con respecto a las misiones nacionales e internacionales, hacer presencia y acompañar a los pastores y sus familias y en el desarrollo de la tarea ministerial ayudar en las actividades que requiera la iglesia.</p>
+
+		<p>Por medio de este departamento se busca que los pastores e iglesias se sientan acompañados en la realización de la tarea ministerial, apoyados con recursos que les permitan hacer mejor la tarea, monitoreados en aquellas áreas de mayor complejidad o necesidad.</p>
+	</article>
+	<article>
+		<h3>¿COMO SER PARTE?</h3>
+
+		<p>Las personas interesadas pueden ser parte del grupo de los grupos de apoyo que funcionan en cada una de las iglesias.</p>
+
+		<p>En el caso de las misiones las personas interesadas pueden acercarse al encargado de las misiones de la iglesia local y manifestar su interés de ayudar en los programas de trabajo que tienen en esa iglesia.</p>
+
+		<p>Si hay otras personas interesadas en formar parte de los distintos equipos de trabajo lo debe comunicar al coordinador nacional quien establecerá los contactos dependiendo del area de interés de la persona.</p>
+
+		<h3>DECLARATORIA DE LA MISION</h3>
+		 
+		<p>“Comprometido con la tarea misional de la IACYMC dentro y fuera del país, orientando la plantación de nuevas iglesias tanto internas en Colombia, como externas en el exterior, ayudando a la iglesia en el desarrollo de un ministerio sano y sanador a nivel eclesial y de la familia pastoral”</p>
+
+		<div id="video">
+			<div class="video-container">
+	        	<iframe width="560" height="315" src="http://www.youtube.com/embed/Bgi2ixXSWfg" frameborder="0" allowfullscreen></iframe><!--|default:"No se ha encontrado ningún video" }}-->		
+			</div>
+		</div>
+	</article>	
+</section>
+
+<section class="tips-ministerios clearfix">
+	<div>
+		<article>
+			<h4>DESCARGAR NUESTRO LOGO</h4>
+			<div>
+	    		<img src="{{STATIC_URL}}img/ministerios/logo_misiones.jpg">
+			</div>	
+			<div class="cinta">
+				<a href="#">DESCARGAR</a><br>
+				<a href="#">J.P.G</a> / <a href="#">E.P.S</a> / <a href="#">P.N.G</a> / <a href="#">A.I</a>
+			</div>		
+		</article><!--
+		--><article>
+			<h4>PRÓXIMO CONGRESO</h4>
+			<div>
+	    		<img src="{{STATIC_URL}}img/ministerios/discipulado.jpg">
+			</div>
+			<div class="cinta"><a href="#">VER MÁS...</a><br><a href="#">DESCARGAR AFICHE</a></div>
+		</article><!--
+		--><article>
+			<h4>VIDEO PROMO CONGRESO</h4>
+			<div id="video1">
+				<div class="video-container">
+		        	<iframe width="560" height="315" src="http://www.youtube.com/embed/Bgi2ixXSWfg" frameborder="0" allowfullscreen></iframe><!--|default:"No se ha encontrado ningún video" }}-->		
+				</div>
+			</div>
+			<div id="relleno"></div>
+		</article>
+	</div>
+
+	<p>
+		<strong>CONTÁCTANOS</strong><br>
+		coordinaror: Pastor Efren Grueso<br>
+		Mail: misionesalianza@alianzacristiana.co<br>
+		Teléfonos: 7452128 Ext. 101
+	</p>
+</section>
+
+{% endblock section_inf %}

@@ -18,8 +18,10 @@ urlpatterns = patterns('',
     url(r'^nosotros/fundaciones/$', 'website.views.fundaciones'),
     url(r'^nosotros/objetivos/$', 'website.views.objetivos'),
     url(r'^nosotros/efi/$', 'website.views.efi'),
-
+    url(r'^nosotros/logros/$', 'website.views.logros'),
     url(r'^mision/$', 'website.views.mision'),
+
+    url(r'^ministerios/misiones/$', 'website.views.misiones'),
 
     url(r'^noticias/(?P<noticia_slug>.+?)/?$', 'website.views.detalle_noticia'),
    

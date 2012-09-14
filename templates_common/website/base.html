@@ -60,10 +60,14 @@
 								<li><a href="{% url website.views.fundaciones %}">Fundaciones</a></li>
 								<li><a href="{% url website.views.objetivos %}">Objetivos Estratégicos</a></li>	
 								<li><a href="{% url website.views.efi %}">E.F.I.</a></li>	
+								<li><a href="{% url website.views.logros %}">Logros</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="/">MINISTERIOS</a>
+							<ul class="sub-menu">
+								<li><a href="{% url website.views.misiones %}">Misiones</a></li>
+							</ul>
 						</li>
 						<li><a href="/">NOTICIAS</a></li>
 						<li><a href="/">RECURSOS</a></li>
@@ -142,11 +146,14 @@
 							<li><a href="{% url website.views.fundaciones %}">Fundaciones</a></li>	
 							<li><a href="{% url website.views.objetivos %}">Objetivos Estratégicos</a></li>
 							<li><a href="{% url website.views.efi %}">E.F.I.</a></li>
+							<li><a href="{% url website.views.logros %}">Logros</a></li>
 						</ul>
 					</li>
 					<li>
 						<div><a href="ministerios.html">MINISTERIOS</a><span></span></div>
-						
+						<ul class="submenu-footer">
+							<li><a href="{% url website.views.misiones %}">Misiones</a></li>
+						</ul>
 					</li>
 					<li>
 						<div><a href="noticias.html">NOTICIAS</a><span></span></div>

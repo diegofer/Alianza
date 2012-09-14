@@ -22,7 +22,6 @@ def home(request):
 		video = Youtube.objects.all().filter(activado=True).order_by('-fecha')[0]
 	except Youtube.DoesNotExist:
 		video = None
-	
 	return render_to_response('website/home.html',{'noticias':noticias, 'youtube':video}, context_instance=RequestContext(request))
 
 def peticiones(request):
@@ -88,12 +87,23 @@ def efi(request):
 	titulo = 'Conoce más<br/> <span class="mediana">de la Alianza...</span>'
 	return render_to_response('website/efi.html',{'titulo':titulo}, context_instance=RequestContext(request))
 
+def logros(request):
+	titulo = 'Conoce más<br/> <span class="mediana">de la Alianza...</span>'
+	return render_to_response('website/logros.html',{'titulo':titulo}, context_instance=RequestContext(request))
+
 
 ##################  MISION ##########################
 
 def mision(request):
 	titulo = 'Nuestra<br/> <span>Misión</span>'
 	return render_to_response('website/mision.html',{'titulo':titulo}, context_instance=RequestContext(request))
+
+##################  MINISTERIOS ######################
+
+def misiones(request):
+	return render_to_response('website/misiones.html', context_instance=RequestContext(request))
+
+
 
 ##################  NOTICIAS ##########################
 

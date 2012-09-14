@@ -43,8 +43,8 @@
 		<a href="{% url website.views.efi %}"><h4>E.F.I.<span>(escuela de Formación Integral)</span><img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
 		<p>La E.F.I hace parte del seminario el cual reconoce los dos primeros semestres. <a href="{% url website.views.efi %}">Ver mas...</a></p>
 
-		<h4>Logros e Indicadores de Logro<img src="{{STATIC_URL}}img/linea.jpg"></h4>
-		<p>Conoce mas de nuestros ministerios a través de esta información. <a href="/vision">Ver mas...</a></p>
+		<a href="{% url website.views.logros %}"><h4>Logros e Indicadores de Logro<img src="{{STATIC_URL}}img/linea.jpg"></h4></a>
+		<p>Conoce mas de nuestros ministerios a través de esta información. <a href="{% url website.views.logros %}">Ver mas...</a></p>
 		
 
 	</article>

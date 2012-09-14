@@ -1,0 +1,28 @@
+.header-ministerios{position:relative;}
+.header-ministerios img{display:block;position:relative;max-width:1024px;width:100%;height:auto \ 9;z-index:5;}
+.header-ministerios img:hover + ul.menu-ministerios{display:block;top:0 !important}
+.header-ministerios ul.menu-ministerios{list-style:none;position:absolute;margin:0;padding:0;top:0;left:-150px;width:150px;z-index:10;background:#f2efef !important;background:-moz-linear-gradient(top,#c0bebd 0%,#f2efef 50%) !important;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#c0bebd),color-stop(50%,#f2efef)) !important;background:-webkit-linear-gradient(top,#c0bebd 0%,#f2efef 50%) !important;background:-o-linear-gradient(top,#c0bebd 0%,#f2efef 50%) !important;background:-ms-linear-gradient(top,#c0bebd 0%,#f2efef 50%) !important;background:linear-gradient(top,#c0bebd 0%,#f2efef 50%) !important;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#c0bebd,endColorstr=#f2efef,GradientType=0 );-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#c0bebd, endColorstr=#f2efef)";}
+.header-ministerios ul.menu-ministerios:hover{display:block !important}
+.header-ministerios ul.menu-ministerios li{border-bottom:1px #333 solid;}
+.header-ministerios ul.menu-ministerios li a{display:block;padding:5px;color:#000;font-size:13px;}
+.header-ministerios ul.menu-ministerios li a:hover{background:#8b0000;color:#fff}
+.conten-ministerios{background:#e6e6e6;}
+.conten-ministerios article{width:50%;float:left;margin-bottom:20px;}
+.conten-ministerios article h3,.conten-ministerios article p,.conten-ministerios article #video{padding:0 20px 0 20px}
+.conten-ministerios article p{text-align:justify}
+.tips-ministerios{background:#e6e6e6;margin-top:20px;position:relative;}
+.tips-ministerios >div{margin:30px 0}
+.tips-ministerios article{position:relative;width:32.5%;display:inline-block;vertical-align:top;min-width:250px;margin-bottom:10px;text-align:left;}
+.tips-ministerios article:nth-child(2){margin:0 1% 10px 1%}
+.tips-ministerios article:nth-child(1) #video{background:#dfdfdd;padding:6% 0;-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;-o-border-radius:15px;border-radius:15px}
+.tips-ministerios article img{max-width:100%;width:auto \ 9;margin:auto;display:block}
+.tips-ministerios article h4{background:#333;color:#fff;font-family:'miller',Arial,Sans-serif;margin:0;padding:5px}
+.tips-ministerios article .cinta{background:#808080;position:absolute;bottom:0;width:98%;padding:1%;line-height:17px;filter:alpha(opacity=70);opacity:.7;}
+.tips-ministerios article .cinta a{font-size:13px;font-weight:bold;color:#000;}
+.tips-ministerios article .cinta a:hover{color:#fff}
+.tips-ministerios article #relleno{height:10px;width:100%;background:#808080}
+.tips-ministerios p{padding-left:20px;font-weight:bold;font-size:13px;margin-bottom:50px}
+.tips-ministerios p strong{font-family:'miller',Arial,Sans-serif}
+@media screen and (min-width:320px) and (max-width:1320px){.header-ministerios ul.menu-ministerios{left:0;display:none}
+}@media screen and (max-width:650px){.conten-ministerios article{width:100%}
+}
